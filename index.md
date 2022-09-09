@@ -8,7 +8,7 @@ title: nan copeland dot com
 <!-- slate -->
 <section class="job-block">
 <div class="block">
-<p>I’ve worked at <a href="https://slate.com/">Slate Magazine</a> from May 2018 to May 2021. I work with developers and product managers to add new features to Slate.com and improve the experience for our readers.</p>
+<p>I worked at <a href="https://slate.com/">Slate Magazine</a> from May 2018 to May 2021. I worked with developers and product managers to add new features to Slate.com and improve the experience for our readers.</p>
 
 <ul>
 {%- for post in collections.slate -%}
