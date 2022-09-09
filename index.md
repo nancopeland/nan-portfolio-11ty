@@ -3,12 +3,12 @@ layout: layout.njk
 title: nan copeland dot com
 ---
 
-<p class="intro"><strong>Hi, I'm Nan and I'm an interaction designer at <a href="https://slate.com/">Slate Magazine</a> in NYC. I enjoy talking to users, working with developers and designing in the browser.</strong></p>
+<p class="intro"><strong>Hi, I'm Nan and I'm a product designer at <a href="https://corp.voxmedia.com/">Vox Media</a> in NYC. I enjoy talking to users, working with developers and designing in the browser.</strong></p>
 
 <!-- slate -->
 <section class="job-block">
 <div class="block">
-<p>I’ve worked at <a href="https://slate.com/">Slate Magazine</a> since 2018. I work with developers and product managers to add new features to Slate.com and improve the experience for our readers.</p>
+<p>I’ve worked at <a href="https://slate.com/">Slate Magazine</a> from May 2018 to May 2021. I work with developers and product managers to add new features to Slate.com and improve the experience for our readers.</p>
 
 <ul>
 {%- for post in collections.slate -%}
