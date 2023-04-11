@@ -2,7 +2,7 @@
 
 This site is built with [11ty](https://www.11ty.dev/). 
 
-First time installing on a computer, make sure you have the following installed
+First time installing on a computer, make sure you have the following installed: 
 
 1. xcode command line tools
 2. make sure [python](https://www.python.org/downloads/) is up to date
