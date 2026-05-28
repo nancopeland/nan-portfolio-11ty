@@ -1,22 +1,13 @@
 {
-  "name": "nan-portfolio-11ty",
+  "name": "nancopeland-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Personal site build script",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o css",
-    "serve": "concurrently \"node-sass --watch scss -o css\" \"npx eleventy --serve\" "
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "concurrently": "^5.0.2"
+    "build": "node build.js",
+    "watch": "node watch.js",
+    "serve": "node watch.js & npx serve output"
   },
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "marked": "^12.0.0"
   }
 }

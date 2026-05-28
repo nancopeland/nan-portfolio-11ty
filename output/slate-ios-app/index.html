@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slate iOS app</title>
+  <meta name="description" content="Redesigning the Slate iOS app to improve navigation, podcasts, and the Slate Plus experience.">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <nav><a href="/" class="home-link">Nan Copeland</a></nav>
+    <main>
+      <h1>Slate iOS app</h1>
+      <p class="post-description">Redesigning the Slate iOS app to improve navigation, podcasts, and the Slate Plus experience.</p>
+      
+      <h2>History</h2>
+<p><a href="https://twitter.com/cschieffer">Chris Schieffer</a> and I decided to start working on this project after finishing the <a href="/slate-podcasts">podcasts project</a>. According to Chris, the Slate iOS app has small but very dedicated group of users but the app was outdated and had many bugs. We didn&#39;t want to change the app too much (because of the loyal readership) but wanted to make it smoother and easier to navigate. </p>
+<p>The overall goals of the project: </p>
+<ol>
+<li><strong>Improve the Slate Plus experience:</strong> landing page and letting a user know they are logged in as a Slate Plus member.</li>
+<li><strong>Improve podcast experience:</strong> are we presenting metadata in the best way, what updates should we be making so the app is update to date with <a href="/slate-podcasts">podcasts on the website</a></li>
+<li><strong>Review app navigation and menu:</strong> are we surfacing the most important sections of the app in the easiest way we can? </li>
+<li>Update style/brand of app to fit with <a href="https://slate.com/briefing/2018/01/jason-santa-maria-on-how-slate-redesigned-the-way-we-work.html">redesign</a></li>
+</ol>
+<h2>Research</h2>
+<p>I started off the project by sitting down with some users to figure out how they use the app and what they would like to see in a redesign. I knew I wanted to talk to users in person (vs. using <a href="https://www.usertesting.com/">UserTesting.com</a>) and I thought I could talk to both frequent users of the app and new users. </p>
+<p>I talked to 5 frequent users and 5 new users and I wrote slightly different sets of questions for each (frequent users were asked about how they use use the app each day, new users were not). Both sets of questions asked users to go thru specific parts of the app: app home, navigation/menu, podcasts and Slate Plus. </p>
+<div class="mobile-img">
+    <img src="/img/slate_ios_app/old_app.gif" alt="old app experience" />
+    <span class="caption">Old app experience</span> 
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="Slate Plus landing page in iOS app" src="/img/slate_ios_app/s+_screen.png">
+        <span class="caption">Slate Plus "landing page" in iOS app</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="Latest podcast episodes in iOS app" src="/img/slate_ios_app/podcasts.png">
+        <span class="caption">Latest podcast episodes in iOS app</span>
+    </div>
+</div>
+
+
+<p>Overall, I learned that Slate iOS users opened the app because they want to read the latest Slate news (some users also open it to read the most popular or their &quot;saved&quot; stories) and they want to be able to navigate to said news easily. But, users had difficulty understanding and signing up for Slate Plus as well navigating to and accessing podcasts. Specifically, I learned: </p>
+<h3>Current Users</h3>
+<ul>
+<li>All previous users of the app use the “most recent” feed the most in the app</li>
+<li>3 out of the 5 current users never use the menu (other than maybe “popular” or “saved) or podcasts in the app</li>
+</ul>
+<h3>App Home</h3>
+<ul>
+<li>7 out of 10 users were expecting something more curated that tells the reader what to read (like a homepage)</li>
+<li>The amount of space each story takes up is contested, some people find it scannable but some people find it too large</li>
+<li>3 users use the swiping between stories/sections feature</li>
+</ul>
+<h3>Navigation</h3>
+<ul>
+<li>5 out of 10 users said the menu could use better content organization </li>
+<li>7 out of 10 users said the menu is simple and easy to use</li>
+<li>2 out of 10 users were very passionate about adding search to the app (it exists but is difficult to find) and making it work</li>
+<li>3 out of 10 users mentioned how they like the “save” feature</li>
+</ul>
+<h3>Podcasts</h3>
+<ul>
+<li>8 out of 10 users were confused by the headphones icon (the headphones icon is how you get to the podcasts section), some users thought this icon was for accessibility </li>
+<li>Most of these users looked in the regular menu first for “Podcasts” </li>
+<li>Half of the users thought the podcasts page should land on “Shows” first instead of “Latest” </li>
+<li>3 out of 10 users said linking from Slate’s app to the show in podcast apps would be helpful</li>
+</ul>
+<h3>Slate Plus</h3>
+<ul>
+<li>7 out of 10 users said their benefits (ad-free podcasts, ad-free reading experience in the app) are not clear from the current UX of the app</li>
+<li>Some users noted that the Slate Plus landing page experience (the landing page pops up after clicking into a Slate Plus article) has the info they expected but they didn’t expect it in that location in the app</li>
+<li>Many users were expecting a sort of landing page on the “Slate Plus” page instead of a stream of content</li>
+<li>4 out of 10 users had a hard time finding “Slate Plus” in the menu: a few users scrolled past the “Slate Plus” page and looked at the FAQs page for Slate Plus info</li>
+</ul>
+<h2>Wireframes</h2>
+<p>From the above findings, I decided on the following features &amp; recommendations for the redesign: </p>
+<h3>App Home</h3>
+<ul>
+<li>This is the most-used page for current users but users were expecting something &quot;more curated&quot; so I think the home screen should pull in the hierarchy and editorially-picked stories from slate.com</li>
+<li>Keep the swiping feature because it seems well-liked</li>
+<li>It should be easy to navigate to a “Most Recent” page (because people use it so much currently) but the homepage is separate</li>
+</ul>
+<div class="img-flex-wrapper">
+    <div class="img-flex-33">
+        <img alt="App homepage with top stories vs. recent filter and search in top right" src="/img/slate_ios_app/home_wireframe_1.png">
+        <span class="caption">App homepage with "top stories" vs. "recent" filter and search in top right</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="App homepage with bottom nav and Slate Plus promo across the top" src="/img/slate_ios_app/home_wireframe_2.png">
+        <span class="caption">App homepage with bottom nav and Slate Plus promo across the top</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="App homepage with bottom nav, notable links from slate.com and 'customize' link for customizing the homepage" src="/img/slate_ios_app/home_wireframe_3.png">
+        <span class="caption">App homepage with bottom nav, notable links from slate.com and "customize" link for customizing the homepage</span>
+    </div>
+</div>
+
+<h3>Navigation</h3>
+<ul>
+<li>Navigation should stay simple but have better organization, especially regarding rubrics’ relation to their section</li>
+<li>Different content types in the app that should be reflected in the navigation: Articles (Home, Most Recent/Most Popular/Saved, Section/Rubric content), Podcasts, Slate Plus/Account Info, Support</li>
+<li>Fix search function and make it more prominent</li>
+</ul>
+<div class="img-flex-wrapper">
+    <div class="img-flex-33">
+        <img alt="Nav with 'podcasts' in 'main sections'" src="/img/slate_ios_app/nav_wireframe_1.png">
+        <span class="caption">Nav with "podcasts" in "main sections"</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="Nav with search at the top and 'podcasts' in 'feeds' section" src="/img/slate_ios_app/nav_wireframe_2.png">
+        <span class="caption">Nav with search at the top and "podcasts" in "feeds" section</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="Bottom nav with quick links to 'news', 'podcasts', 'search' and 'account'" src="/img/slate_ios_app/home_wireframe_2.png">
+        <span class="caption">Bottom nav with quick links to "news", "podcasts", "search" and "account"</span>
+    </div>
+</div>
+
+<h3>Podcasts</h3>
+<ul>
+<li>Podcasts should be easier to find, that ideally would be solved by updating how the navigation works (see above) </li>
+<li>Half the users expected &quot;Podcasts&quot; to land on &quot;Shows&quot; instead of &quot;Latest Episodes&quot; but this means half of them thought the opposite...maybe try this page defauting to &quot;Shows&quot; because that is how <a href="https://slate.com/podcasts">slate.com/podcasts</a> works? </li>
+<li>Episode feeds should have the ad-free versions if the person is a Slate Plus member</li>
+<li>Episode pages should link to podcast apps</li>
+</ul>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="Podcasts page - podcast shows with one on each line" src="/img/slate_ios_app/podcasts_wireframe_1.png">
+        <span class="caption">Podcasts page - podcast shows with one on each line</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="Podcasts page - podcast shows 2x2 with large art" src="/img/slate_ios_app/podcasts_wireframe_2.png">
+        <span class="caption">Podcasts page - podcast shows 2x2 with large art</span>
+    </div>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="Podcast show page with app buttons" src="/img/slate_ios_app/podcasts_wireframe_4.png">
+        <span class="caption">Podcast show page with app buttons</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="Podcast episode page with app buttons" src="/img/slate_ios_app/podcasts_wireframe_3.png">
+        <span class="caption">Podcast episode page with app buttons</span>
+    </div>
+</div>
+
+<h3>Slate Plus</h3>
+<ul>
+<li>Create Slate Plus landing page in the app: this page would explain the benefits of Slate Plus and provide price info and the option to sign up from this page</li>
+<li>If you are already a member, you would just have an account info page where you could get your podcast feed, etc </li>
+<li>I think there shouldn’t be a Slate Plus feed page w/ Slate Plus bonus content, bonus content should just be indicated throughout the app w/ a Slate Plus logo (like it is on the website)</li>
+</ul>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="Slate Plus landing page wireframe" src="/img/slate_ios_app/s+_wireframe_1.png">
+        <span class="caption">Slate Plus landing page wireframe</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="Feed page with Slate Plus content indicated" src="/img/slate_ios_app/s+_wireframe_2.png">
+        <span class="caption">Feed page with Slate Plus content indicated</span>
+    </div>
+</div>
+
+<p>In addition to user feedback, I had heard from the Chris that account management was notoriously difficult for both devs and users in the app. Many readers would subscribe to Slate Plus in the app and pay with their Apple ID. After subscribing the app, Slate would send users an email to create an account with slate.com but users rarely created one. Then, members would try to access their Slate Plus benefits outside the Slate iOS app (i.e. finding their private podcast feed link) but couldn&#39;t because they didn&#39;t have an account to log in with.</p>
+<p>To fix this, I created a user flow for account creation:  </p>
+<p><img src="/img/slate_ios_app/account_user_flow.jpg" alt="User paths for creating an account">
+<span class="caption">User paths for creating an account</span> </p>
+<p>I thought prompting new members with account creation right after they subscribe would be an more streamlined way to encourage them to create an account (vs. an email). I also thought prompting users on the &quot;Account&quot; page would help. </p>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="Apple subscription payment (on top of Slate Plus landing page)" src="/img/slate_ios_app/account_wireframe_1.png">
+        <span class="caption">Apple subscription payment (on top of Slate Plus landing page)</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="User would be prompted with account creation right after Apple payment" src="/img/slate_ios_app/account_wireframe_2.png">
+        <span class="caption">User would be prompted with account creation right after Apple payment</span>
+    </div>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-33">
+        <img alt="Account page for a Slate Plus member, able to access podcast feed link" src="/img/slate_ios_app/account_wireframe_3.png">
+        <span class="caption">Account page for a Slate Plus member, able to access podcast feed link</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="Account page for regular account holder, prompted to join Slate Plus" src="/img/slate_ios_app/account_wireframe_4.png">
+        <span class="caption">Account page for regular account holder, prompted to join Slate Plus</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="Account page for Slate Plus member who hasn't created an account, prompted to create an account" src="/img/slate_ios_app/account_wireframe_5.png">
+        <span class="caption">Account page for Slate Plus member who hasn't created an account, prompted to create an account</span>
+    </div>
+</div>
+
+<h2>User Testing</h2>
+<p>Once I had a solid prototype, I decided I should talk to users again. I already knew users&#39; problems with the old app so I decided to just give users the new prototype and ask them to do a few general tasks: </p>
+<ol>
+<li>Can you find the article <a href="https://slate.com/human-interest/2019/07/how-couples-meet-now-versus-earlier-eras.html">&quot;How Meet Cutes Have Changed in the 21st Century&quot; by Heather Schwedel</a>? </li>
+<li>Can you find the &quot;News &amp; Politics&quot; section? </li>
+<li>How would you find the latest episode of <a href="https://slate.com/podcasts/what-next">What Next</a>? </li>
+<li>How would you join Slate Plus?</li>
+</ol>
+<div class="mobile-img">
+    <img src="/img/slate_ios_app/tested_app.gif" alt="old app experience" />
+    <span class="caption"><a href="https://invis.io/W6T11A259RX#/374314337_homepage">Tested prototype</a></span> 
+</div>
+
+<p>I talked to nine users. Users had mostly positive things to say about the new version of the app but commented on the navigation: </p>
+<ul>
+<li>5 users liked how the app is now more consistent w/ the site in terms of brand and navigation. </li>
+<li>4 out of 9 users said we should change “Top Stories” to “Home”</li>
+<li>5 out of 9 users didn’t notice or were confused by the bottom bar, this was usually because it looked like the Safari bottom bar</li>
+</ul>
+<h2>Final Product</h2>
+<p>I decided to make the navigation updates above and also update the UI so it reflected Slate&#39;s brand a bit more. </p>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="Mock of homepage with slate.com stories" src="/img/slate_ios_app/mock_hp.png">
+        <span class="caption">Homepage</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="Mock of navigation menu" src="/img/slate_ios_app/mock_nav.png">
+        <span class="caption">Navigation menu</span>
+    </div>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="Mock of article" src="/img/slate_ios_app/mock_article.png">
+        <span class="caption">Article</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="Mock of feed page" src="/img/slate_ios_app/mock_feed.png">
+        <span class="caption">Feed page</span>
+    </div>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-33">
+        <img alt="Mock of all podcasts page" src="/img/slate_ios_app/mock_podcasts.png">
+        <span class="caption">All podcasts</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="Mock of podcast show page" src="/img/slate_ios_app/mock_show.png">
+        <span class="caption">Podcast show</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="Mock of podcast episode page" src="/img/slate_ios_app/mock_episode.png">
+        <span class="caption">Podcast episode</span>
+    </div>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="Mock of Slate Plus landing page" src="/img/slate_ios_app/mock_s+.png">
+        <span class="caption">Slate Plus landing page</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="Mock of account creation after slate plus subscription" src="/img/slate_ios_app/mock_s+_account.png">
+        <span class="caption">Account creation push after subscription</span>
+    </div>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="Mock of sign in page" src="/img/slate_ios_app/mock_sign_in.png">
+        <span class="caption">Sign in</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="Mock of create account page" src="/img/slate_ios_app/mock_create_account.png">
+        <span class="caption">Create account</span>
+    </div>
+</div>
+
+
+<p>Due to planning, this redesign is not live yet but hopefully it will be soon! Thank you to product manager <a href="https://twitter.com/cschieffer">Chris Schieffer</a> who reviewed the many rounds of design and testing. </p>
+
+    </main>
+    <footer>
+      <a href="/">Home</a> • <a href="/resume_nan_copeland.pdf">Download Résumé</a> • <a href="https://github.com/nancopeland">Github</a>
+    </footer>
+  </div>
+</body>
+</html>

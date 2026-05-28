@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New "cover story" layout</title>
+  <meta name="description" content="A new split-top layout option for Slate's cover stories.">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <nav><a href="/" class="home-link">Nan Copeland</a></nav>
+    <main>
+      <h1>New "cover story" layout</h1>
+      <p class="post-description">A new split-top layout option for Slate's cover stories.</p>
+      
+      <h2>History</h2>
+<p>This project started as an idea from PIE (Slate&#39;s product, interaction and engineering teams) Hack Day because the art director, <a href="https://lisalarsonwalker.com/">Lisa Larson-Walker</a>, wanted to have more visual options for Slate&#39;s cover stories. </p>
+<p>Currently, the cover story template has a full-width horizontal image followed by the headline, subhead and other article data. One of Lisa&#39;s ideas was to have a more square or vertical image at the top and have the headline and other info beside it.</p>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="full width template for story about 25 best characters" src="/img/CS_split_top/full-width_characters.png">
+        <span class="caption"><a href="https://slate.com/culture/2019/08/most-important-characters-movies-tv-books-21st-century.html">Current full-width template</a></span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="full width template for story about climate change" src="/img/CS_split_top/full-width_climate-change.png">
+        <span class="caption"><a href="https://slate.com/business/2019/09/climate-change-crisis-companies-rich-lucky-farming-firefighting.html">Current full-width template</a></span>
+    </div>
+</div>
+
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="first mock (1)" src="/img/CS_split_top/first_mock1.png">
+    </div>
+    <div class="img-flex-50">
+        <img alt="first mock (2)" src="/img/CS_split_top/first_mock2.png">
+    </div>
+    <span class="caption">Two of Lisa's first mocks</span>
+</div>
+
+<p>The initial idea for this was just as a Hack Day project but once both the dev team and the editorial team saw the mocks, they wanted to build it. </p>
+<h2>Mocks</h2>
+<p>After it was decided everyone wanted to work on this, I started mocking up past stories where I thought the art might have looked better in this layout. </p>
+<p>For these mocks, I used a setting that currently exists called &quot;theme color.&quot; The &quot;theme color&quot; allows someone on the art team to set a color (that usually corresponds with the art) and the link underlines and other details on the page change to this color to make the template feel a bit more custom. I thought this would be a nice thing to use in this prospective new layout.</p>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="new layout for story about piper perabo" src="/img/CS_split_top/split-top_piper-perabo.png">
+        <span class="caption">New layout for <a href="https://slate.com/news-and-politics/2019/08/piper-perabo-resistance-celebrity.html">this story</a></span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="new layout for story about japanese knotweed" src="/img/CS_split_top/split-top_knotweed.png">
+        <span class="caption">New layout for <a href="https://slate.com/technology/2019/05/japanese-knotweed-invasive-plants.html">this story</a></span>
+    </div>
+</div>
+
+<p>Although the theme color usually looked good, some cover stories had a more serious tone and I thought maybe they&#39;d look better with a black or white background instead of a color. </p>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="new layout for story about a catholic priest" src="/img/CS_split_top/split-top_priest-red.png">
+    </div>
+    <div class="img-flex-50">
+        <img alt="new layout for story about a catholic priest" src="/img/CS_split_top/split-top_priest-black.png">
+    </div>
+    <span class="caption">Background color options for <a href="https://slate.com/human-interest/2019/09/theodore-mccarrick-archbishop-interview-kansas-sexual-abuse.html">this story</a></span>
+</div>
+
+<h2>Workflow</h2>
+<p>After I mocked up a bunch of different articles, I met with the dev team to decide how this would get built in <a href="https://clay.nymag.com/">Clay</a> (the CMS): </p>
+<ol>
+<li>Is the photo an <code class="language-html">img</code> or <code class="language-scss">background-image</code>?</li>
+<li>How is the text color decided? How is the background color decide? How do we make sure this relationship is has enough color contrast?</li>
+<li>How does the new template work with the old template? Should the new template be an option in the main CS template or should the new template be its own template?</li>
+</ol>
+<p>For the first question, we decided to make the image a <code class="language-scss">background-image</code>.  The old template&#39;s image is a regular <code class="language-html">img</code> so I thought dev might be a preference for that because the new template&#39;s image is 50% of the page width and needs to grow and shrink to fill the space, <code class="language-scss">background-image</code> made more sense. </p>
+<p>For the second question, we decided to let the art team have full control over picking the background color and text color (as well as a third option for the bracket color). We also thought it would be nice to have some sort of test running to show the color contrast between the background and text colors but that wouldn&#39;t be a blocker to this going live and I could keep an eye on the contrast until it is completed.</p>
+<h3>CMS options for new layout:</h3>
+<ol>
+<li>Background color <ul>
+<li>Black</li>
+<li>White</li>
+<li>Theme color</li>
+</ul>
+</li>
+<li>Text color<ul>
+<li>Black</li>
+<li>White</li>
+</ul>
+</li>
+<li>Bracket color <ul>
+<li>Black</li>
+<li>White</li>
+<li>Theme color</li>
+</ul>
+</li>
+</ol>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="new layout for story about a catholic priest" src="/img/CS_split_top/clay_full-width.png">
+    </div>
+    <div class="img-flex-50">
+        <img alt="new layout for story about a catholic priest" src="/img/CS_split_top/clay_split-top.png">
+    </div>
+    <span class="caption">Settings in Clay, Slate's CMS</span>
+</div>
+
+<p>For the third option, dev said a new template was easier but they could make it an option if that was a better experience. I talked to the art team and they preferred the new layout be an option in the current template instead of being its own template so they could toggle between two layouts (full-width vs. split-top) to see what looked best. I also thought that this layout being incorporated into the current template would make sure it was used more often and not forgotten. </p>
+<h2>Implementation &amp; working with dev</h2>
+<p>Based on the meeting, I ticketed this new feature and, after many sprints, dev started working on it. The biggest challenges we faced in development were image-related. </p>
+<p>Initially, the developer, <a href="https://twitter.com/jon47">Jonathan Zuckerman</a> (JZ), separated &quot;layout&quot; and &quot;image&quot; into separate tabs in the CMS editing experience. I thought this was a good idea but we realized that the images needed to be different based on layout (horizontal vs. square/vertical image). It was confusing having the image tab be reliant on the layout tab but the image content was hidden until you clicked on the tab. </p>
+<p>I checked with the art team about this decision (because they are primary people making layout and image decisions) and they said it didn&#39;t really matter if layout and image were separated and it would be nice to see all the information at once. So, we put all the options in one tab. </p>
+<p><img src="/img/CS_split_top/split-top_bong-joon-ho.gif" alt="layout switching for story about bong joon-ho">
+<span class="caption">Switching the layout for <a href="https://slate.com/culture/2019/10/bong-joon-ho-profile-parasite-movie-spielberg-oscars.html">this story</a></span></p>
+<p>Another issue was the image cropping on desktop vs. mobile. Initially when I mocked it up, I thought the full-width and split-top layouts would have the same crop on mobile (horizontal image). But, in development, JZ said it was much easier to keep the same crop across all screen sizes. I thought this also looked good so we went with this. </p>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="new layout for story about a catholic priest" src="/img/CS_split_top/mobile_mock.png">
+        <span class="caption">Mobile mock</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="new layout for story about a catholic priest" src="/img/CS_split_top/mobile_prod.png">
+        <span class="caption">Mobile view in production</span>
+    </div>
+</div>
+
+<p>Development was lead by <a href="https://twitter.com/jon47">Jonathan Zuckerman</a> and product management was lead by <a href="https://twitter.com/cschieffer">Chris Schieffer</a>. Big thanks to <a href="https://twitter.com/lrsnwlkr">Lisa Larson-Walker</a> for the idea and reviewing the initial mocks and <a href="https://twitter.com/abbjmc">Abby McIntyre</a>, <a href="https://twitter.com/mwieg">Megan Wiegand</a>, <a href="https://twitter.com/hollyloo">Holly Allen</a>, <a href="https://twitter.com/MatthewsRamo">Natalie Matthews-Ramo</a> and <a href="https://twitter.com/DeePhunk">Derreck Johnson</a> for reviewing this many times during development. </p>
+<h2>Usage</h2>
+<p>Here are some examples of the split-top layout being used: </p>
+<ul>
+<li><a href="https://slate.com/human-interest/2020/07/reopening-schools-teachers-coronavirus-risks.html">COVID school reopening</a> by Dan Kois, July 19, 2020</li>
+<li><a href="https://slate.com/human-interest/2020/11/favorite-podcast-episodes-2020.html">Slate&#39;s Favorite Podcast Episodes of 2020</a> by various Slate staff, December 01, 2020</li>
+<li><a href="https://slate.com/human-interest/2020/12/80-over-80-most-influential-top-20.html">The Most Influential 80-Plus-Year-Olds in America</a> by Molly Olmstead &amp; various Slate staff, December, 22, 2020</li>
+</ul>
+
+    </main>
+    <footer>
+      <a href="/">Home</a> • <a href="/resume_nan_copeland.pdf">Download Résumé</a> • <a href="https://github.com/nancopeland">Github</a>
+    </footer>
+  </div>
+</body>
+</html>
