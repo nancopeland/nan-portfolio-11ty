@@ -9,7 +9,7 @@ I enjoy working at the intersection of design and code to make a product easier 
 
 ### Vox Media
 
-* Overtone design system  _coming soon_
+* [Overtone design system](/overtone-design-system/)
 * _New York Magazine_ Perks Program _coming soon_
 
 ### Slate Magazine
