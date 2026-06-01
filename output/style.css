@@ -77,15 +77,13 @@ img {
   height: auto;
   display: block;
   border: 1px solid #dddddd;
-  margin: 40px 0;
 }
 
 .caption {
   color: #666666;
   font-size: 14px;
-  margin-bottom: 3rem;
   display: block;
-  margin-top: -28px;
+  margin-top: 10px;
   line-height: 1.1;
 }
 
@@ -94,7 +92,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   @media (min-width: 728px) {
-    margin: 0 -100px;
+    margin: 40px -150px;
   }
 }
 
