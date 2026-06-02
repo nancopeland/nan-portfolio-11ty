@@ -12,7 +12,7 @@ Write posts in Markdown, run one command, get HTML. No framework, no config.
 ├── posts/
 │   ├── index.md      ← your homepage
 │   └── slate-ios-app.md   ← one file per post/page
-└── output/           ← generated HTML (don't edit by hand)
+└── docs/             ← generated HTML (don't edit by hand)
     ├── index.html
     └── slate-ios-app/
         └── index.html
@@ -51,7 +51,7 @@ The filename becomes the URL slug: `posts/my-new-post.md` → `/my-new-post/`
 npm run build
 ```
 
-Outputs everything to `output/`. Open `output/index.html` in your browser to preview.
+Outputs everything to `docs/`. Open `docs/index.html` in your browser to preview.
 
 ## Live preview while writing
 
@@ -63,19 +63,19 @@ Auto-rebuilds whenever you save a `.md` or `.css` file. Pair with a browser that
 
 ## Images
 
-Put images in `output/img/` (same as before — the `img/` folder lives inside `output/`). Reference them in Markdown as `/img/my-image.png`.
+Put images in `docs/img/` (same as before — the `img/` folder lives inside `docs/`). Reference them in Markdown as `/img/my-image.png`.
 
 ## Publishing to GitHub Pages
 
 1. Create a repo on GitHub (e.g. `nancopeland.github.io`)
 2. Run `npm run build`
-3. Push the contents of `output/` to the `main` branch (or use a `gh-pages` branch)
+3. Push the contents of `docs/` to the `main` branch (or use a `gh-pages` branch)
 4. In repo Settings → Pages, set source to your branch / root
 
 Every time you write a new post:
 ```bash
 npm run build
-cd output
+cd docs
 git add .
 git commit -m "new post: my post title"
 git push
@@ -83,10 +83,10 @@ git push
 
 ## Publishing to Netlify (auto-deploy)
 
-1. Push your whole project (not just `output/`) to GitHub
+1. Push your whole project (not just `docs/`) to GitHub
 2. Connect the repo to Netlify
 3. Set build command: `npm run build`
-4. Set publish directory: `output`
+4. Set publish directory: `docs`
 
 Now every `git push` triggers a deploy automatically — no manual step needed.
 

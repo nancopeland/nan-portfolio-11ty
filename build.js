@@ -8,7 +8,7 @@ const path = require("path");
 const { marked } = require("marked");
 
 const POSTS_DIR = "./posts";
-const OUTPUT_DIR = "./output";
+const OUTPUT_DIR = "./docs";
 const CSS_FILE = "./style.css";
 
 // ---------- helpers ----------
@@ -77,7 +77,7 @@ function htmlTemplate({ title, date, description, bodyHtml, isHome }) {
 // ---------- build ----------
 
 function build() {
-  // Make sure output dir exists
+  // Make sure docs dir exists
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
   const files = fs.readdirSync(POSTS_DIR).filter((f) => f.endsWith(".md"));
@@ -95,8 +95,8 @@ function build() {
 
     const html = htmlTemplate({ title, date, description, bodyHtml, isHome });
 
-    // index.md → output/index.html
-    // my-post.md → output/my-post/index.html  (clean URLs)
+    // index.md → docs/index.html
+    // my-post.md → docs/my-post/index.html  (clean URLs)
     let outPath;
     if (isHome) {
       outPath = path.join(OUTPUT_DIR, "index.html");
@@ -111,7 +111,7 @@ function build() {
     console.log(`  ✓ ${file} → ${outPath}`);
   }
 
-  // Copy style.css to output
+  // Copy style.css to docs
   if (fs.existsSync(CSS_FILE)) {
     fs.copyFileSync(CSS_FILE, path.join(OUTPUT_DIR, "style.css"));
     console.log("  ✓ style.css copied");
