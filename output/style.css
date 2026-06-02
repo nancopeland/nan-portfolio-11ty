@@ -49,8 +49,8 @@ ul, ol {
 
 h1 {
   font-size: 36px;
-  line-height: 1.2;
-  margin: 40px 0 4px;
+  line-height: 1;
+  margin: 40px 0 6px;
   letter-spacing: .01em;
 }
 
@@ -77,10 +77,14 @@ table {
   border-collapse: collapse;
   border: 1px solid #222;
   margin: 30px 0;
+  width: calc(100% + 20px);
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-tr {
-  border-bottom: 1px solid #222;
+tbody > tr {
+  border-top: 1px solid #222;
 }
 
 th, td {
@@ -106,13 +110,17 @@ img {
   display: block;
   margin-top: 10px;
   line-height: 1.1;
+  margin-bottom: 25px;
+  @media (min-width: 728px) {
+    margin-bottom: 0; 
+  } 
 }
 
 /* flex grid for images */
 .img-flex-wrapper {
   display: flex;
   flex-wrap: wrap;
-  @media (min-width: 728px) {
+  @media (min-width: 1024px) {
     margin: 40px -150px;
   }
 }
