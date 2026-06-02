@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overtone Design System</title>
+  <meta name="description" content="A new design system for migrating from Chorus to Wordpress">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <nav><a href="/" class="home-link">Nan Copeland</a></nav>
+    <main>
+      <h1>Overtone Design System</h1>
+      <p class="post-description">A new design system for migrating from Chorus to Wordpress</p>
+      
+      <p>I managed the migration of <a href="https://www.vox.com/">Vox</a>, <a href="https://www.theverge.com/">The Verge</a>, <a href="https://www.eater.com/">Eater</a> and <a href="https://www.sbnation.com/">SB Nation</a> from the Chorus CMS to Wordpress which included migrating from the Chorus front-end to the new design system, Overtone. Design management wanted the front-end to run on the same system but also allow for bespoke brand expression and for a designer to be able to manage the small details, especially type styling.</p>
+<div class="img-flex-wrapper">
+    <img alt="standard articles on vox, the verge, eater and SBN" src="/img/overtone_design_system/overtone_standard_articles.jpg">
+    <span class="caption">Standard article template</span>
+</div>
+
+<h2>Setup &amp; Tokens</h2>
+<p>The goal was for each site to look good out of the box when it migrated to Wordpress but also allow varying levels of customization, depending on the brand&#39;s visual and editorial needs. </p>
+<p>To achieve this, the system uses shared <a href="https://m3.material.io/foundations/design-tokens/overview">design tokens</a> that are assigned to shared elements between the sites. The tokens have different styles (aka values) so each site can have different fonts, colors, etc. but be on the same system. </p>
+<p>So, in the code, tokens look something like this: </p>
+<table>
+<thead>
+<tr>
+<th align="left">token name</th>
+<th align="left">Vox</th>
+<th align="left">The Verge</th>
+<th align="left">Eater</th>
+<th align="left">SBNation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>sys.color.primary</code></td>
+<td align="left"><code>#FFF200</code></td>
+<td align="left"><code>#5200FF</code></td>
+<td align="left"><code>#E60000</code></td>
+<td align="left"><code>#0033FF</code></td>
+</tr>
+<tr>
+<td align="left"><code>sys.font.primary</code></td>
+<td align="left">Balto</td>
+<td align="left">Poly Sans</td>
+<td align="left">Degular</td>
+<td align="left">Druk</td>
+</tr>
+</tbody></table>
+<p>But visually, that looks like this: </p>
+<div class="img-flex-wrapper">
+    <img alt="Standard article template on desktop and mobile with a few tokens labelled" src="/img/overtone_design_system/overtone_standard_articles.gif">
+    <span class="caption">Standard article template on desktop and mobile with a few tokens labelled</span>
+</div>
+
+<p>To set up a new site, a brand could set 1-2 fonts and 1-2 colors and use default layouts for everything. But if a brand wanted to spend a lot more time customizing both their branding and tooling, that would also work within the system. </p>
+<div class="img-flex-wrapper">
+    <img alt="Standard article template on desktop and mobile with a few tokens labelled" src="/img/overtone_design_system/content_card_evolution.jpg">
+    <span class="caption">How a content card gets branded and styled</span>
+</div>
+
+<h2>Articles</h2>
+<p>In addition to the standard lede (illustrated above), there are also feature, special feature and overlay ledes and a shared set of article body components. The system used for articles is the most comprehensive and powerful part of the design system because any tooling designed for one brand is available for the other brands, if they choose to incorporate it. </p>
+<div class="img-flex-wrapper">
+    <img alt="Feature article template on Vox" src="/img/overtone_design_system/overtone_feature_article_tkns_vox.jpg">
+    <span class="caption">Feature article template on Vox</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="Feature article template on The Verge" src="/img/overtone_design_system/overtone_feature_article_tkns_verge.jpg">
+    <span class="caption">Feature article template on The Verge</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="Feature article template on Eater" src="/img/overtone_design_system/overtone_feature_article_tkns_eater.jpg">
+    <span class="caption">Feature article template on Eater</span>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="paragraph components on Vox" src="/img/overtone_design_system/paragraph_vox.png">
+        <span class="caption">paragraph components on Vox</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="paragraph components on The Verge" src="/img/overtone_design_system/paragraph_verge.png">
+        <span class="caption">paragraph components on The Verge</span>
+    </div>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="paragraph components on Eater" src="/img/overtone_design_system/paragraph_eater.png">
+        <span class="caption">paragraph components on Eater</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="paragraph components on SBNation" src="/img/overtone_design_system/paragraph_sbn.png">
+        <span class="caption">paragraph components on SBNation</span>
+    </div>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-33">
+        <img alt="sidebar component on Vox" src="/img/overtone_design_system/sidebar_vox.png">
+        <span class="caption">sidebar component on Vox</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="sidebar component on The Verge" src="/img/overtone_design_system/sidebar_verge.png">
+        <span class="caption">sidebar component on The Verge</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="sidebar component on Eater" src="/img/overtone_design_system/sidebar_eater.png">
+        <span class="caption">sidebar component on Eater</span>
+    </div>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-50">
+        <img alt="product card on The Verge" src="/img/overtone_design_system/product_verge.png">
+        <span class="caption">product card on The Verge</span>
+    </div>
+    <div class="img-flex-50">
+        <img alt="product card on Eater" src="/img/overtone_design_system/product_eater.png">
+        <span class="caption">product card on Eater</span>
+    </div>
+</div>
+
+<p><em>more about Overtone coming soon...</em></p>
+<!--## Homepages
+
+For homepages, there are a set of shared components that can be arranged differently. This allows for different programming based on the brand’s needs. Each brand can also add new components based on what they want to feature on their homepage.
+
+[screenshot of same pattern on diff homepages, 3grid on Vox, Eater & SBN] 
+[screenshot of top of each homepage?]
+[screenshot of bespoke HP components]-->
+
+    </main>
+    <footer>
+      <a href="/">Home</a> • <a href="/resume_nan_copeland.pdf">Download Résumé</a> • <a href="https://github.com/nancopeland">Github</a>
+    </footer>
+  </div>
+</body>
+</html>
