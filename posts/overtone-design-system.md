@@ -39,7 +39,7 @@ To set up a new site, a brand could set 1-2 fonts and 1-2 colors and use default
 
 ## Articles
 
-In addition to the standard lede (illustrated above), there are also feature, special feature and overlay ledes and a shared set of article body components. The system used for articles is the most comprehensive and powerful part of the design system because any tooling designed for one brand is available for the other brands, if they chose to incorporate it. 
+In addition to the standard lede (illustrated above), there are also feature, special feature and overlay ledes and a shared set of article body components. The system used for articles is the most comprehensive and powerful part of the design system because any tooling designed for one brand is available for the other brands, if they choose to incorporate it. 
 
 <div class="img-flex-wrapper">
     <img alt="Feature article template on Vox" src="/img/overtone_design_system/overtone_feature_article_tkns_vox.jpg">
@@ -70,10 +70,12 @@ In addition to the standard lede (illustrated above), there are also feature, sp
     <span class="caption">Product component</span>
 </div>
 
-## Homepages
+_more about Overtone coming soon..._
+
+<!--## Homepages
 
 For homepages, there are a set of shared components that can be arranged differently. This allows for different programming based on the brand’s needs. Each brand can also add new components based on what they want to feature on their homepage.
 
 [screenshot of same pattern on diff homepages, 3grid on Vox, Eater & SBN] 
 [screenshot of top of each homepage?]
-[screenshot of bespoke HP components]
+[screenshot of bespoke HP components]-->

@@ -97,11 +97,11 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  border: 1px solid #dddddd;
+  border: 1px solid #eee;
 }
 
 .caption {
-  color: #666666;
+  color: #333;
   font-size: 14px;
   display: block;
   margin-top: 10px;
