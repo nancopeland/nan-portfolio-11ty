@@ -7,7 +7,7 @@ const fs = require("fs");
 const { execSync } = require("child_process");
 
 const WATCH_DIRS = ["./posts", "."];
-const IGNORE = new Set(["node_modules", "output", ".git"]);
+const IGNORE = new Set(["node_modules", "docs", ".git"]);
 
 console.log("Watching for changes... (Ctrl+C to stop)\n");
 

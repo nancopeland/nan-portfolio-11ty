@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node build.js",
     "watch": "node watch.js",
-    "serve": "node watch.js & npx serve output"
+    "serve": "node watch.js & npx serve docs"
   },
   "dependencies": {
     "marked": "^12.0.0"
