@@ -54,7 +54,7 @@ function htmlTemplate({ title, date, description, bodyHtml, isHome }) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${title}</title>
   ${metaDesc}
-  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,401,500,501,700,701&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${cssPath}">
 </head>
 <body>
