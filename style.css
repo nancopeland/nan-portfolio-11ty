@@ -52,12 +52,18 @@ h1 {
   line-height: 1;
   margin: 40px 0 6px;
   letter-spacing: .01em;
+  @media (min-width: 728px) {
+    margin-top: 50px;
+  }
 }
 
 .post-description {
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   line-height: 1.2;
   font-size: 22px;
+  @media (min-width: 728px) {
+    margin: 0 0 30px;
+  }
 }
 
 h2 {
