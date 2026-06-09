@@ -10,6 +10,7 @@ const { marked } = require("marked");
 const POSTS_DIR = "./posts";
 const OUTPUT_DIR = "./docs";
 const CSS_FILE = "./style.css";
+const FAVICON_FILE = "./favicon.svg";
 
 // ---------- helpers ----------
 
@@ -43,6 +44,7 @@ function htmlTemplate({ title, date, description, bodyHtml, isHome }) {
 
   const header = `<a href="/" class="home-link">Nan Copeland</a>`;
   const cssPath = isHome ? "style.css" : "../style.css";
+  const faviconPath = isHome ? "favicon.svg" : "../favicon.svg";
   const dateHtml = date && !isHome ? `<p class="post-date">${date}</p>` : "";
   const titleHtml = title && !isHome ? `<h1>${title}</h1>` : "";
   const descHtml = description && !isHome ? `<p class="post-description">${description}</p>` : "";
@@ -54,7 +56,8 @@ function htmlTemplate({ title, date, description, bodyHtml, isHome }) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${title}</title>
   ${metaDesc}
-  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,401,500,501,700,701&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="${faviconPath}">
   <link rel="stylesheet" href="${cssPath}">
 </head>
 <body>
@@ -115,6 +118,11 @@ function build() {
   if (fs.existsSync(CSS_FILE)) {
     fs.copyFileSync(CSS_FILE, path.join(OUTPUT_DIR, "style.css"));
     console.log("  ✓ style.css copied");
+  }
+
+  if (fs.existsSync(FAVICON_FILE)) {
+    fs.copyFileSync(FAVICON_FILE, path.join(OUTPUT_DIR, "favicon.svg"));
+    console.log("  ✓ favicon.svg copied");
   }
 
   console.log(`\nDone! ${files.length} page(s) built into ./${OUTPUT_DIR}/`);

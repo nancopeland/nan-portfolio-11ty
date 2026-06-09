@@ -6,8 +6,22 @@ description: A new design system for migrating from Chorus to Wordpress
 I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.theverge.com/), [Eater](https://www.eater.com/) and [SB Nation](https://www.sbnation.com/) from the Chorus CMS to Wordpress which included migrating from the Chorus front-end to the new design system, Overtone. Design management wanted the front-end to run on the same system but also allow for bespoke brand expression and for a designer to be able to manage the small details, especially type styling.
 
 <div class="img-flex-wrapper">
-    <img alt="standard articles on vox, the verge, eater and SBN" src="/img/overtone_design_system/overtone_standard_articles.jpg">
-    <span class="caption">Standard article template</span>
+	<div class="img-flex-25">
+		<img alt="standard article template, vox" src="/img/overtone_design_system/standard_vox.png">
+		<span class="caption">standard article template, Vox</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="standard article template, the verge" src="/img/overtone_design_system/standard_verge.png">
+		<span class="caption">standard article template, The Verge</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="standard article template, eater" src="/img/overtone_design_system/standard_eater.png">
+		<span class="caption">standard article template, Eater</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="standard article template, SBNation" src="/img/overtone_design_system/standard_sbn.png">
+		<span class="caption">standard article template, SBNation</span>
+	</div>
 </div>
 
 ## Setup & Tokens
@@ -33,8 +47,18 @@ But visually, that looks like this:
 To set up a new site, a brand could set 1-2 fonts and 1-2 colors and use default layouts for everything. But if a brand wanted to spend a lot more time customizing both their branding and tooling, that would also work within the system. 
 
 <div class="img-flex-wrapper">
-    <img alt="Standard article template on desktop and mobile with a few tokens labelled" src="/img/overtone_design_system/content_card_evolution.jpg">
-    <span class="caption">How a content card gets branded and styled</span>
+	<div class="img-flex-33">
+		<img alt="content card, default theme" src="/img/overtone_design_system/content_card_1.png">
+		<span class="caption">content card, default theme</span>
+	</div>
+	<div class="img-flex-33">
+		<img alt="content card, eater theme w/ fonts" src="/img/overtone_design_system/content_card_2.png">
+		<span class="caption">content card, eater theme w/ fonts</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="content card, eater theme w/ fonts, colors & finetuning" src="/img/overtone_design_system/content_card_3.png">
+		<span class="caption">content card, eater theme w/ fonts, colors & finetuning</span>
+	</div>
 </div>
 
 ## Articles
