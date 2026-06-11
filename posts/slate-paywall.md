@@ -4,7 +4,7 @@ title: Paywall checkout
 
 ## Brief history
 
-Over the past year, I've been working on the Slate paywall (see other post on [podcasts](/paywall-podcasts)). One of the parts of the paywall I spent the most time on was testing the checkout process because I knew it was crucial to the paywall being successful.
+Over the past year, I've been working on the Slate paywall. One of the parts of the paywall I spent the most time on was testing the checkout process because I knew it was crucial to the paywall being successful.
 
 Before mocking, I checked out a few other sites. All sites started with an "offer" landing page and then I was asked for my account and payment information. Some sites had the account and payment forms on the same page as the "offer" and some sites took you to a different page. I mocked up these two flows for Slate but wasn't sure which one would make for a better user experience so I decided to do a few rounds of user testing.
 
