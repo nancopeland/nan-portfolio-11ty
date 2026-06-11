@@ -17,5 +17,6 @@ I enjoy working at the intersection of design and code to make a product easier 
 
 * [Cover story redesign](/CS-split-top/)
 * [iOS app](/slate-ios-app/)
+* [Subscription landing page](/slate-paywall/)
 
 Contact me and nmcopeland1@gmail.com. Download my [résumé](/resume_nan_copeland.pdf) and follow me on [Github](https://github.com/nancopeland). 
