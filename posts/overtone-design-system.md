@@ -140,12 +140,12 @@ In addition to the standard lede (illustrated above), there are also feature, sp
 	</div>
 </div>
 
-_more about Overtone coming soon..._
+## Homepages & Navigation
 
-<!--## Homepages
+Hompages and navigation are 2 of the areas of the system that allow for the most customization. The homepages obviously needed to be different based editorial needs. Vox is more newsy so could use more standard components while Eater focuses on service journalism and city-specific content. The navs are similar but also need to showcase the brand and what it covers because it is at the top of every page. 
 
-For homepages, there are a set of shared components that can be arranged differently. This allows for different programming based on the brand’s needs. Each brand can also add new components based on what they want to feature on their homepage.
+For both areas, there are a set of shared components that can be arranged differently. This allows for different programming and design layout based on the brand’s needs and visual language.
 
+[screenshot of top of each homepage with nav]
 [screenshot of same pattern on diff homepages, 3grid on Vox, Eater & SBN] 
-[screenshot of top of each homepage?]
-[screenshot of bespoke HP components]-->
+[screenshot of diff parts of the nav arranged differently for each brand]
