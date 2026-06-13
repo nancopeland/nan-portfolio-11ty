@@ -24,6 +24,16 @@ I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.
 	</div>
 </div>
 
+## Project Goals
+
+This was a pretty involved project that took years with input from design, product, engineering and editorial stakeholders. 
+
+* Same front-end system 
+* Designer-managed tokens
+* Well-designed default layouts
+* Bespoke brand expression
+* System that allows for custom design + engineering work when necessary
+
 ## Setup & Tokens
 
 The goal was for each site to look good out of the box when it migrated to Wordpress but also allow varying levels of customization, depending on the brand's visual and editorial needs. 
@@ -46,6 +56,14 @@ But visually, that looks like this:
 
 To set up a new site, a brand could set 1-2 fonts and 1-2 colors and use default layouts for everything. But if a brand wanted to spend a lot more time customizing both their branding and tooling, that would also work within the system. 
 
+<div class="img-flex-wrapper">
+    <img alt="Feature article template on Vox" src="/img/overtone_design_system/overtone_standard_article.jpg">
+    <span class="caption">Default standard article template</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="Feature article template on Vox" src="/img/overtone_design_system/overtone_category.jpg">
+    <span class="caption">Default category page template</span>
+</div>
 <div class="img-flex-wrapper">
 	<div class="img-flex-33">
 		<img alt="content card, default theme" src="/img/overtone_design_system/content_card_1.png">
