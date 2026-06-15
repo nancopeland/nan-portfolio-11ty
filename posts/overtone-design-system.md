@@ -26,7 +26,7 @@ I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.
 
 ## Project Goals
 
-This was a pretty involved project that took years with input from design, product, engineering and editorial stakeholders. 
+This was a pretty involved project that required input from design, product, engineering and editorial stakeholders. 
 
 * Same front-end system 
 * Designer-managed tokens
@@ -37,6 +37,32 @@ This was a pretty involved project that took years with input from design, produ
 ## Setup & Tokens
 
 The goal was for each site to look good out of the box when it migrated to Wordpress but also allow varying levels of customization, depending on the brand's visual and editorial needs. 
+
+<div class="img-flex-wrapper">
+    <img alt="Feature article template on Vox" src="/img/overtone_design_system/overtone_standard_article.jpg">
+    <span class="caption">Default standard article template</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="Feature article template on Vox" src="/img/overtone_design_system/overtone_category.jpg">
+    <span class="caption">Default category page template</span>
+</div>
+
+To set up a new site, a brand could set 1-2 fonts and 1-2 colors and use default layouts for everything. But if a brand wanted to spend a lot more time customizing both their branding and tooling, that would also work within the system. 
+
+<div class="img-flex-wrapper">
+	<div class="img-flex-33">
+		<img alt="content card, default theme" src="/img/overtone_design_system/content_card_1.png">
+		<span class="caption">content card, default theme</span>
+	</div>
+	<div class="img-flex-33">
+		<img alt="content card, eater theme w/ fonts" src="/img/overtone_design_system/content_card_2.png">
+		<span class="caption">content card, eater theme w/ fonts</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="content card, eater theme w/ fonts, colors & finetuning" src="/img/overtone_design_system/content_card_3.png">
+		<span class="caption">content card, eater theme w/ fonts, colors & finetuning</span>
+	</div>
+</div>
 
 To achieve this, the system uses shared [design tokens](https://m3.material.io/foundations/design-tokens/overview) that are assigned to shared elements between the sites. The tokens have different styles (aka values) so each site can have different fonts, colors, etc. but be on the same system. 
 
@@ -52,31 +78,6 @@ But visually, that looks like this:
 <div class="img-flex-wrapper">
     <img alt="Standard article template on desktop and mobile with a few tokens labelled" src="/img/overtone_design_system/overtone_standard_articles.gif">
     <span class="caption">Standard article template on desktop and mobile with a few tokens labelled</span>
-</div>
-
-To set up a new site, a brand could set 1-2 fonts and 1-2 colors and use default layouts for everything. But if a brand wanted to spend a lot more time customizing both their branding and tooling, that would also work within the system. 
-
-<div class="img-flex-wrapper">
-    <img alt="Feature article template on Vox" src="/img/overtone_design_system/overtone_standard_article.jpg">
-    <span class="caption">Default standard article template</span>
-</div>
-<div class="img-flex-wrapper">
-    <img alt="Feature article template on Vox" src="/img/overtone_design_system/overtone_category.jpg">
-    <span class="caption">Default category page template</span>
-</div>
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="content card, default theme" src="/img/overtone_design_system/content_card_1.png">
-		<span class="caption">content card, default theme</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="content card, eater theme w/ fonts" src="/img/overtone_design_system/content_card_2.png">
-		<span class="caption">content card, eater theme w/ fonts</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="content card, eater theme w/ fonts, colors & finetuning" src="/img/overtone_design_system/content_card_3.png">
-		<span class="caption">content card, eater theme w/ fonts, colors & finetuning</span>
-	</div>
 </div>
 
 ## Articles
