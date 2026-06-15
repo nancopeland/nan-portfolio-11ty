@@ -144,8 +144,30 @@ In addition to the standard lede (illustrated above), there are also feature, sp
 
 Hompages and navigation are 2 of the areas of the system that allow for the most customization. The homepages obviously needed to be different based editorial needs. Vox is more newsy so could use more standard components while Eater focuses on service journalism and city-specific content. The navs are similar but also need to showcase the brand and what it covers because it is at the top of every page. 
 
+<div class="img-flex-wrapper">
+    <img alt="navs across brands" src="/img/overtone_design_system/all_navs.jpg">
+    <span class="caption">Same list of links in different nav layouts</span>
+</div>
+
 For both areas, there are a set of shared components that can be arranged differently. This allows for different programming and design layout based on the brand’s needs and visual language.
 
-[screenshot of top of each homepage with nav]
-[screenshot of same pattern on diff homepages, 3grid on Vox, Eater & SBN] 
-[screenshot of diff parts of the nav arranged differently for each brand]
+<div class="img-flex-wrapper">
+	<div class="img-flex-50">
+		<img alt="Shared components on Vox mobile homepage" src="/img/overtone_design_system/homepage_mobile_vox.jpg">
+		<span class="caption">Shared components on Vox mobile homepage</span>
+	</div>
+	<div class="img-flex-50">
+		<img alt="Shared components on Eater mobile homepage" src="/img/overtone_design_system/homepage_mobile_eater.jpg">
+		<span class="caption">Shared components on Eater mobile homepage</span>
+	</div>
+</div>
+<div class="img-flex-wrapper">
+	<div class="img-flex-50">
+		<img alt="Shared components on Vox desktop homepage" src="/img/overtone_design_system/homepage_desktop_vox.jpg">
+		<span class="caption">Shared components on Vox desktop homepage</span>
+	</div>
+	<div class="img-flex-50">
+		<img alt="Shared components on Eater desktop homepage" src="/img/overtone_design_system/homepage_desktop_eater.jpg">
+		<span class="caption">Shared components on Eater desktop homepage</span>
+	</div>
+</div>
