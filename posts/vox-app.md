@@ -10,15 +10,20 @@ I worked on a MVP concept for the Vox app that includes access to Vox news, podc
 Your browser does not support the video tag.
 </video>
 
+<video width="250" height="625" controls autoplay muted playsinline>
+  <source src="/img/vox_app/vox_app_phone2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 <!--<img class="mobile-img" alt="Feature article template on Vox" src="/img/vox_app/vox_app.gif">-->
 
 ## Initial Prototype
 
-To gain leadership sign on for the project, I did some quick wireframes (based on the [design system](/overtone-design-system/)) of what the app could look like based on a few simple requirements: 
+To gain leadership sign on for the project, I did some quick wireframes (using the [design system](/overtone-design-system/)) of what the app could look like based on a few simple requirements: 
 
 * Homepage + Articles
 * Podcasts 
-* Video
+* Videos
 * Account + Saved Articles
 
 <div class="img-flex-wrapper">
@@ -44,3 +49,56 @@ To gain leadership sign on for the project, I did some quick wireframes (based o
 	</div>
 </div>
 
+## Nav & Video 
+
+Once we got signoff to work on the app, we wanted to start building it ASAP. So, the first big decision we committed to was using the default Apple liquid glass bottom navigation. One of the app developers highly encouraged us to do this because it would be easier to maintain. At first I didn't love it because I liked the look of the more custom navs but I was eventually convinced because the native audio player (for podcasts) was very slick and the general tradeoffs seemed easier for everyone involved.
+
+<div class="img-flex-wrapper">
+	<div class="img-flex-25">
+		<img alt="custom nav idea" src="/img/vox_app/nav_alt1.jpg">
+		<span class="caption">custom nav idea</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="custom nav idea" src="/img/vox_app/nav_alt2.jpg">
+		<span class="caption">custom nav idea</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="custom nav idea" src="/img/vox_app/nav_alt3.jpg">
+		<span class="caption">custom nav idea</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="custom nav idea" src="/img/vox_app/nav_alt4.jpg">
+		<span class="caption">custom nav idea</span>
+	</div>
+</div>
+
+<div class="img-flex-wrapper">
+	<div class="img-flex-25">
+		<img alt="home tab + liquid glass nav" src="/img/vox_app/liquid_home.jpg">
+		<span class="caption">home tab + liquid glass nav</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="home tab + liquid glass native audio player" src="/img/vox_app/liquid_home_pod.jpg">
+		<span class="caption">home tab + liquid glass native audio player</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="podcasts tab + liquid glass nav" src="/img/vox_app/liquid_pod.jpg">
+		<span class="caption">podcasts tab + liquid glass nav</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="more tab + liquid glass nav" src="/img/vox_app/liquid_more.jpg">
+		<span class="caption">more tab + liquid glass nav</span>
+	</div>
+</div>
+
+For the video tab, editorial requested an emphasis on vertical video but also wanted to feature their horizontal video content from YouTube. I initially was trying a version where both were featured on the main video tab and you could vertically scroll to the next video. But, as the biggest TikTok user on the team, I thought just featuring vertical video that started automatically playing was a better experience. I suggested this to the team and they agreed it was more engaging and were down to do this if we could feature horizontal video on the home tab. 
+
+[video mocks]
+
+## Podcasts
+
+## Home
+
+For the home page, the product manager wanted to have 2 tabs: default editorialize homepage and reverse chron latest feed. The latest feed would be for users who check the homepage multiple times per day. 
+
+## Onboarding
