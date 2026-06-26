@@ -11,7 +11,7 @@ I enjoy working at the intersection of design and code to make a product easier 
 
 * [Overtone design system](/overtone-design-system/)
 * [_New York_ Magazine Perks Program](/nym-perks/)
-* Vox app _coming soon_
+* [Vox app](/vox-app)
 
 ### Slate Magazine
 
