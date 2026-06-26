@@ -10,12 +10,12 @@ I worked on a MVP concept for the Vox app that includes access to Vox news, podc
 Your browser does not support the video tag.
 </video>
 
-<video width="250" height="625" controls autoplay muted playsinline>
+<!--<video width="250" height="625" controls autoplay muted playsinline>
   <source src="/img/vox_app/vox_app_phone2.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
-<!--<img class="mobile-img" alt="Feature article template on Vox" src="/img/vox_app/vox_app.gif">-->
+<img class="mobile-img" alt="Feature article template on Vox" src="/img/vox_app/vox_app.gif">-->
 
 ## Initial Prototype
 
@@ -91,14 +91,120 @@ Once we got signoff to work on the app, we wanted to start building it ASAP. So,
 	</div>
 </div>
 
-For the video tab, editorial requested an emphasis on vertical video but also wanted to feature their horizontal video content from YouTube. I initially was trying a version where both were featured on the main video tab and you could vertically scroll to the next video. But, as the biggest TikTok user on the team, I thought just featuring vertical video that started automatically playing was a better experience. I suggested this to the team and they agreed it was more engaging and were down to do this if we could feature horizontal video on the home tab. 
+For the video tab, editorial requested an emphasis on vertical video but also wanted to feature their horizontal video content from YouTube. I initially was trying a version where both were featured on the main video tab and you could vertically scroll to the next video. But, as the biggest TikTok user on the team, I thought featuring only vertical video that played automatically was a better experience. I suggested this to the team and they agreed it was more engaging and were down to do this if we could feature horizontal video on the home tab. 
 
-[video mocks]
+<div class="img-flex-wrapper">
+	<div class="img-flex-33">
+		<img alt="initial video tab mock" src="/img/vox_app/video1.jpg">
+		<span class="caption">initial video tab mock</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="initial video playing mock" src="/img/vox_app/video2.jpg">
+		<span class="caption">initial video playing mock</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="video tab with only vertical video" src="/img/vox_app/video3.jpg">
+		<span class="caption">video tab with only vertical video</span>
+	</div>
+</div>
 
 ## Podcasts
 
-## Home
+The podcasts tab was one of the most complicated parts of the app. One of the core parts of the app was being able to listen to Vox podcasts in the app (subscribers get ad-free podcasts, non-subscribers get ads) so it was important to nail the user experience. It was also complicated because [Today, Explained](https://podcasts.apple.com/us/podcast/today-explained/id1346207297) publishes every day and is the most popular Vox podcast but we wanted to feature other Vox shows as well. 
+
+Initially I thought a natural experience would be the latest Today, Explained episode at the top of the page followed by a few of the latest episodes of each podcast show. When designing for podcasts, I'm always wondering if it is more important to emphasize the episode or the show that the episode is part of. 
+
+<div class="img-flex-wrapper">
+	<div class="img-flex-20">
+		<img alt="initial option" src="/img/vox_app/initial_pod1.jpg">
+		<span class="caption">initial option</span>
+	</div>
+    <div class="img-flex-20">
+		<img alt="initial option" src="/img/vox_app/initial_pod2.jpg">
+		<span class="caption">initial option</span>
+	</div>
+    <div class="img-flex-20">
+		<img alt="initial option" src="/img/vox_app/initial_pod3.jpg">
+		<span class="caption">initial option</span>
+	</div>
+    <div class="img-flex-20">
+		<img alt="initial option" src="/img/vox_app/initial_pod4.jpg">
+		<span class="caption">initial option</span>
+	</div>
+    <div class="img-flex-20">
+		<img alt="initial option" src="/img/vox_app/initial_pod5.jpg">
+		<span class="caption">initial option</span>
+	</div>
+</div>
+
+When we showed these ideas to editorial, they didn't like the emphasis only on Today, Explained, the wanted the focus of the page to be on all the podcasts. I was struggling with the initial layout so decided to try something with quick links to the shows at the top and then latest episodes below. 
+
+We presented these 2 options to editorial:
+
+### Option 1
+* Latest Today, Explained episode at the top
+* All shows (except Today, Explained) below w/ latest 2 episodes
+* Emphasizes Today, Explained and how often there is a new episode
+
+### Option 2
+* All shows in a carousel at top
+* All shows below w/ latest 2 episodes
+* Emphasizes overview of Vox podcasts and allows user to quickly access the show they’re looking for
+
+<div class="img-flex-wrapper">
+	<div class="img-flex-25">
+		<img alt="option 1" src="/img/vox_app/opt1_1.jpg">
+		<span class="caption">option 1</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="option 1" src="/img/vox_app/opt1_2.jpg">
+		<span class="caption">option 1 + podcast playing</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="option 1" src="/img/vox_app/opt2_1.jpg">
+		<span class="caption">option 2</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="option 1" src="/img/vox_app/opt2_2.jpg">
+		<span class="caption">option 2 + podcast playing</span>
+	</div>
+</div>
+
+Editorial liked the new option that focused on all the shows, not just Today, Explained and it also felt like a more straightforward design so we went with that. I also added screens for show and episode pages. 
+
+<div class="img-flex-wrapper">
+	<div class="img-flex-33">
+		<img alt="final podcast tab" src="/img/vox_app/final_pod1.jpg">
+		<span class="caption">final podcast tab</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="final podcast tab + podcast playing" src="/img/vox_app/final_pod2.jpg">
+		<span class="caption">final podcast tab + podcast playing</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="final show page" src="/img/vox_app/final_show.jpg">
+		<span class="caption">final show page</span>
+	</div>
+</div>
+<div class="img-flex-wrapper">
+	<div class="img-flex-33">
+		<img alt="final episode page" src="/img/vox_app/final_ep1.jpg">
+		<span class="caption">final episode page</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="final episode page + podcast playing" src="/img/vox_app/final_ep2.jpg">
+		<span class="caption">final episode page + podcast playing</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="native app audio player" src="/img/vox_app/final_ep3.jpg">
+		<span class="caption">native app audio player</span>
+	</div>
+</div>
+
+_Home tab & onboarding coming soon..._
+
+<!--## Home
 
 For the home page, the product manager wanted to have 2 tabs: default editorialize homepage and reverse chron latest feed. The latest feed would be for users who check the homepage multiple times per day. 
 
-## Onboarding
+## Onboarding-->
