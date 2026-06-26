@@ -16,8 +16,8 @@
       <h1>Vox iOS app</h1>
       <p class="post-description">Vox app with news, podcasts and video all in one place</p>
       
-      <p>I worked on a MVP concept for the Vox app that includes access to Vox news, podcasts and video. The goal of the app was to provide a premium experience for subscribers, specifically ad-free podcasts and vertical video. </p>
-<video width="350" height="700" controls autoplay muted playsinline>
+      <p>I worked on the MVP for a Vox app that includes access to Vox news, podcasts and video. The goal of the app was to provide a premium experience for subscribers, specifically ad-free podcasts and vertical video. </p>
+<video width="350" height="700" controls autoplay muted playsinline loop>
   <source src="/img/vox_app/vox_app.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -30,11 +30,11 @@ Your browser does not support the video tag.
 <img class="mobile-img" alt="Feature article template on Vox" src="/img/vox_app/vox_app.gif">-->
 
 <h2>Initial Prototype</h2>
-<p>To gain leadership sign on for the project, I did some quick wireframes (using the <a href="/overtone-design-system/">design system</a>) of what the app could look like based on a few simple requirements: </p>
+<p>To gain leadership&#39;s sign on for the project, I did some quick wireframes (using the <a href="/overtone-design-system/">design system</a>) of what the app could look like based on a few simple requirements: </p>
 <ul>
 <li>Homepage + Articles</li>
 <li>Podcasts </li>
-<li>Videos</li>
+<li>Videos - vertical &amp; horizontal</li>
 <li>Account + Saved Articles</li>
 </ul>
 <div class="img-flex-wrapper">
@@ -61,7 +61,7 @@ Your browser does not support the video tag.
 </div>
 
 <h2>Nav &amp; Video</h2>
-<p>Once we got signoff to work on the app, we wanted to start building it ASAP. So, the first big decision we committed to was using the default Apple liquid glass bottom navigation. One of the app developers highly encouraged us to do this because it would be easier to maintain. At first I didn&#39;t love it because I liked the look of the more custom navs but I was eventually convinced because the native audio player (for podcasts) was very slick and the general tradeoffs seemed easier for everyone involved.</p>
+<p>Once we got signoff to work on the app, we wanted to start building it ASAP. So, the first big decision we committed to was using the default Apple liquid glass bottom navigation. One of the app developers highly encouraged us to do this because it would be easier to maintain. At first I didn&#39;t love it because I liked the look of the more custom navs but I was eventually convinced because the native audio player (for podcasts) was very slick and the general tradeoffs seemed better for everyone involved.</p>
 <div class="img-flex-wrapper">
     <div class="img-flex-25">
         <img alt="custom nav idea" src="/img/vox_app/nav_alt1.jpg">
@@ -100,7 +100,7 @@ Your browser does not support the video tag.
     </div>
 </div>
 
-<p>For the video tab, editorial requested an emphasis on vertical video but also wanted to feature their horizontal video content from YouTube. I initially was trying a version where both were featured on the main video tab and you could vertically scroll to the next video. But, as the biggest TikTok user on the team, I thought featuring only vertical video that played automatically was a better experience. I suggested this to the team and they agreed it was more engaging and were down to do this if we could feature horizontal video on the home tab. </p>
+<p>For the video tab, editorial requested an emphasis on vertical video but also wanted to feature their horizontal video content from YouTube. I initially was trying a version where both were featured on the main video tab and after you clicked on a video, you could vertically scroll thru all the videos. But, as the biggest TikTok user on the team, I thought featuring only vertical video that played automatically was a better experience. I suggested this to the team and they agreed it was more engaging and were okay to do this if we could feature horizontal video on the home tab. </p>
 <div class="img-flex-wrapper">
     <div class="img-flex-33">
         <img alt="initial video tab mock" src="/img/vox_app/video1.jpg">
@@ -117,8 +117,8 @@ Your browser does not support the video tag.
 </div>
 
 <h2>Podcasts</h2>
-<p>The podcasts tab was one of the most complicated parts of the app. One of the core parts of the app was being able to listen to Vox podcasts in the app (subscribers get ad-free podcasts, non-subscribers get ads) so it was important to nail the user experience. It was also complicated because <a href="https://podcasts.apple.com/us/podcast/today-explained/id1346207297">Today, Explained</a> publishes every day and is the most popular Vox podcast but we wanted to feature other Vox shows as well. </p>
-<p>Initially I thought a natural experience would be the latest Today, Explained episode at the top of the page followed by a few of the latest episodes of each podcast show. When designing for podcasts, I&#39;m always wondering if it is more important to emphasize the episode or the show that the episode is part of. </p>
+<p>The podcasts tab was one of the most complicated parts of the app. One of the core parts of the app was being able to listen to Vox podcasts in the app (subscribers get ad-free podcasts, non-subscribers get ads) so it was important to nail the user experience. I also had to figure out the correct focus for the page. <a href="https://podcasts.apple.com/us/podcast/today-explained/id1346207297">Today, Explained</a> publishes every day and is the most popular Vox podcast but we wanted to feature all Vox podcasts. </p>
+<p>Initially I thought a natural experience would be the latest Today, Explained episode at the top of the page followed by a few of the latest episodes for each show. When designing for podcasts, I&#39;m always wondering if it is more important to emphasize the episode or the show that the episode is part of. </p>
 <div class="img-flex-wrapper">
     <div class="img-flex-20">
         <img alt="initial option" src="/img/vox_app/initial_pod1.jpg">
@@ -142,7 +142,7 @@ Your browser does not support the video tag.
     </div>
 </div>
 
-<p>When we showed these ideas to editorial, they didn&#39;t like the emphasis only on Today, Explained, the wanted the focus of the page to be on all the podcasts. I was struggling with the initial layout so decided to try something with quick links to the shows at the top and then latest episodes below. </p>
+<p>When we showed these ideas to editorial, they didn&#39;t like the emphasis only on Today, Explained, they wanted the focus of the page to be on all podcasts. I was struggling with the initial layout so decided to try something with quick links to the shows at the top and then latest episodes below. </p>
 <p>We presented these 2 options to editorial:</p>
 <h3>Option 1</h3>
 <ul>
@@ -152,8 +152,8 @@ Your browser does not support the video tag.
 </ul>
 <h3>Option 2</h3>
 <ul>
-<li>All shows in a carousel at top</li>
-<li>All shows below w/ latest 2 episodes</li>
+<li>All shows in a carousel at the top</li>
+<li>All shows below with latest 2 episodes</li>
 <li>Emphasizes overview of Vox podcasts and allows user to quickly access the show they’re looking for</li>
 </ul>
 <div class="img-flex-wrapper">
@@ -175,7 +175,7 @@ Your browser does not support the video tag.
     </div>
 </div>
 
-<p>Editorial liked the new option that focused on all the shows, not just Today, Explained and it also felt like a more straightforward design so we went with that. I also added screens for show and episode pages. </p>
+<p>Editorial liked the new option that focused on all the shows and that option also felt like a more straightforward design so we went with that. I also added screens for show and episode pages. </p>
 <div class="img-flex-wrapper">
     <div class="img-flex-33">
         <img alt="final podcast tab" src="/img/vox_app/final_pod1.jpg">

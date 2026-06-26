@@ -3,9 +3,9 @@ title: Vox iOS app
 description: Vox app with news, podcasts and video all in one place
 ---
 
-I worked on a MVP concept for the Vox app that includes access to Vox news, podcasts and video. The goal of the app was to provide a premium experience for subscribers, specifically ad-free podcasts and vertical video. 
+I worked on the MVP for a Vox app that includes access to Vox news, podcasts and video. The goal of the app was to provide a premium experience for subscribers, specifically ad-free podcasts and vertical video. 
 
-<video width="350" height="700" controls autoplay muted playsinline>
+<video width="350" height="700" controls autoplay muted playsinline loop>
   <source src="/img/vox_app/vox_app.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -19,11 +19,11 @@ Your browser does not support the video tag.
 
 ## Initial Prototype
 
-To gain leadership sign on for the project, I did some quick wireframes (using the [design system](/overtone-design-system/)) of what the app could look like based on a few simple requirements: 
+To gain leadership's sign on for the project, I did some quick wireframes (using the [design system](/overtone-design-system/)) of what the app could look like based on a few simple requirements: 
 
 * Homepage + Articles
 * Podcasts 
-* Videos
+* Videos - vertical & horizontal
 * Account + Saved Articles
 
 <div class="img-flex-wrapper">
@@ -51,7 +51,7 @@ To gain leadership sign on for the project, I did some quick wireframes (using t
 
 ## Nav & Video 
 
-Once we got signoff to work on the app, we wanted to start building it ASAP. So, the first big decision we committed to was using the default Apple liquid glass bottom navigation. One of the app developers highly encouraged us to do this because it would be easier to maintain. At first I didn't love it because I liked the look of the more custom navs but I was eventually convinced because the native audio player (for podcasts) was very slick and the general tradeoffs seemed easier for everyone involved.
+Once we got signoff to work on the app, we wanted to start building it ASAP. So, the first big decision we committed to was using the default Apple liquid glass bottom navigation. One of the app developers highly encouraged us to do this because it would be easier to maintain. At first I didn't love it because I liked the look of the more custom navs but I was eventually convinced because the native audio player (for podcasts) was very slick and the general tradeoffs seemed better for everyone involved.
 
 <div class="img-flex-wrapper">
 	<div class="img-flex-25">
@@ -91,7 +91,7 @@ Once we got signoff to work on the app, we wanted to start building it ASAP. So,
 	</div>
 </div>
 
-For the video tab, editorial requested an emphasis on vertical video but also wanted to feature their horizontal video content from YouTube. I initially was trying a version where both were featured on the main video tab and you could vertically scroll to the next video. But, as the biggest TikTok user on the team, I thought featuring only vertical video that played automatically was a better experience. I suggested this to the team and they agreed it was more engaging and were down to do this if we could feature horizontal video on the home tab. 
+For the video tab, editorial requested an emphasis on vertical video but also wanted to feature their horizontal video content from YouTube. I initially was trying a version where both were featured on the main video tab and after you clicked on a video, you could vertically scroll thru all the videos. But, as the biggest TikTok user on the team, I thought featuring only vertical video that played automatically was a better experience. I suggested this to the team and they agreed it was more engaging and were okay to do this if we could feature horizontal video on the home tab. 
 
 <div class="img-flex-wrapper">
 	<div class="img-flex-33">
@@ -110,9 +110,9 @@ For the video tab, editorial requested an emphasis on vertical video but also wa
 
 ## Podcasts
 
-The podcasts tab was one of the most complicated parts of the app. One of the core parts of the app was being able to listen to Vox podcasts in the app (subscribers get ad-free podcasts, non-subscribers get ads) so it was important to nail the user experience. It was also complicated because [Today, Explained](https://podcasts.apple.com/us/podcast/today-explained/id1346207297) publishes every day and is the most popular Vox podcast but we wanted to feature other Vox shows as well. 
+The podcasts tab was one of the most complicated parts of the app. One of the core parts of the app was being able to listen to Vox podcasts in the app (subscribers get ad-free podcasts, non-subscribers get ads) so it was important to nail the user experience. I also had to figure out the correct focus for the page. [Today, Explained](https://podcasts.apple.com/us/podcast/today-explained/id1346207297) publishes every day and is the most popular Vox podcast but we wanted to feature all Vox podcasts. 
 
-Initially I thought a natural experience would be the latest Today, Explained episode at the top of the page followed by a few of the latest episodes of each podcast show. When designing for podcasts, I'm always wondering if it is more important to emphasize the episode or the show that the episode is part of. 
+Initially I thought a natural experience would be the latest Today, Explained episode at the top of the page followed by a few of the latest episodes for each show. When designing for podcasts, I'm always wondering if it is more important to emphasize the episode or the show that the episode is part of. 
 
 <div class="img-flex-wrapper">
 	<div class="img-flex-20">
@@ -137,7 +137,7 @@ Initially I thought a natural experience would be the latest Today, Explained ep
 	</div>
 </div>
 
-When we showed these ideas to editorial, they didn't like the emphasis only on Today, Explained, the wanted the focus of the page to be on all the podcasts. I was struggling with the initial layout so decided to try something with quick links to the shows at the top and then latest episodes below. 
+When we showed these ideas to editorial, they didn't like the emphasis only on Today, Explained, they wanted the focus of the page to be on all podcasts. I was struggling with the initial layout so decided to try something with quick links to the shows at the top and then latest episodes below. 
 
 We presented these 2 options to editorial:
 
@@ -147,8 +147,8 @@ We presented these 2 options to editorial:
 * Emphasizes Today, Explained and how often there is a new episode
 
 ### Option 2
-* All shows in a carousel at top
-* All shows below w/ latest 2 episodes
+* All shows in a carousel at the top
+* All shows below with latest 2 episodes
 * Emphasizes overview of Vox podcasts and allows user to quickly access the show they’re looking for
 
 <div class="img-flex-wrapper">
@@ -170,7 +170,7 @@ We presented these 2 options to editorial:
 	</div>
 </div>
 
-Editorial liked the new option that focused on all the shows, not just Today, Explained and it also felt like a more straightforward design so we went with that. I also added screens for show and episode pages. 
+Editorial liked the new option that focused on all the shows and that option also felt like a more straightforward design so we went with that. I also added screens for show and episode pages. 
 
 <div class="img-flex-wrapper">
 	<div class="img-flex-33">
