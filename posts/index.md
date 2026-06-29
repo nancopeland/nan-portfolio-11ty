@@ -19,4 +19,4 @@ I enjoy working at the intersection of design and code to make a product easier 
 * [iOS app](/slate-ios-app/)
 * [Subscription landing page](/slate-paywall/)
 
-Contact me and nmcopeland1@gmail.com. Download my [résumé](/resume_nan_copeland.pdf) and follow me on [Github](https://github.com/nancopeland). 
+Contact me at nmcopeland1@gmail.com. Download my [résumé](/resume_nan_copeland.pdf) and follow me on [Github](https://github.com/nancopeland). 
