@@ -201,10 +201,61 @@ Editorial liked the new option that focused on all the shows and that option als
 	</div>
 </div>
 
-_Home tab & onboarding coming soon..._
+## Home
 
-<!--## Home
+For the home page, we wanted to have the same tooling + design as the Vox.com homepage but with a few additions: 
 
-For the home page, the product manager wanted to have 2 tabs: default editorialize homepage and reverse chron latest feed. The latest feed would be for users who check the homepage multiple times per day. 
+* 2 tabs: default editorialized homepage & reverse chron latest feed - the latest feed would be for users who check the homepage multiple times per day. 
+* Latest Today, Explained podcast episode
+* Latest horizontal video (if published within the past 48 hours)
 
-## Onboarding-->
+I knew the latest horizontal video would go below the first view of the app ("below the fold") so I initially prioritized the tabs and the latest podcast. 
+
+<div class="img-flex-wrapper">
+	<div class="img-flex-33">
+		<img alt="home tab mock" src="/img/vox_app/initial_home1.jpg">
+		<span class="caption">home tab mock</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="home tab mock" src="/img/vox_app/initial_home2.jpg">
+		<span class="caption">home tab mock</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="home tab mock" src="/img/vox_app/initial_home3.jpg">
+		<span class="caption">home tab mock</span>
+	</div>
+</div>
+
+<div class="img-flex-wrapper">
+	<div class="img-flex-33">
+		<img alt="home tab mock" src="/img/vox_app/initial_home4.jpg">
+		<span class="caption">home tab mock</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="home tab mock" src="/img/vox_app/initial_home5.jpg">
+		<span class="caption">home tab mock</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="home tab mock" src="/img/vox_app/initial_home6.jpg">
+		<span class="caption">home tab mock</span>
+	</div>
+</div>
+
+We decided the tabs worked better at the top of the page instead of after the lead story. I liked the podcast at the top of the page but my PM thought it better further down the page because we have a whole podcast tab. After a few refinements, we landed on these mocks. 
+
+<div class="img-flex-wrapper">
+	<div class="img-flex-33">
+		<img alt="home tab, editorialized default" src="/img/vox_app/final_home1.jpg">
+		<span class="caption">home tab, editorialized default</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="home tab, editorialized video" src="/img/vox_app/final_home2.jpg">
+		<span class="caption">home tab, editorialized video</span>
+	</div>
+    <div class="img-flex-33">
+		<img alt="home tab, latest feed" src="/img/vox_app/final_home3.jpg">
+		<span class="caption">home tab, latest feed</span>
+	</div>
+</div>
+
+## Onboarding
