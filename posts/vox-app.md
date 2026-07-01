@@ -260,4 +260,39 @@ We decided the tabs worked better at the top of the page instead of after the le
 
 ## Onboarding
 
-
+<div class="img-flex-wrapper">
+	<div class="img-flex-25">
+		<img alt="loading screen" src="/img/vox_app/onboarding1.jpg">
+		<span class="caption">loading screen</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="welcome screen" src="/img/vox_app/onboarding2.jpg">
+		<span class="caption">welcome screen</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="log in" src="/img/vox_app/onboarding3.jpg">
+		<span class="caption">log in</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="create account" src="/img/vox_app/onboarding4.jpg">
+		<span class="caption">create account</span>
+	</div>
+</div>
+<div class="img-flex-wrapper">
+	<div class="img-flex-25">
+		<img alt="enter password" src="/img/vox_app/onboarding5.jpg">
+		<span class="caption">enter password</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="start free trial" src="/img/vox_app/onboarding6.jpg">
+		<span class="caption">start free trial</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="payment webview" src="/img/vox_app/onboarding7.jpg">
+		<span class="caption">payment webview</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="enable notifications" src="/img/vox_app/onboarding8.jpg">
+		<span class="caption">enable notifications</span>
+	</div>
+</div>
