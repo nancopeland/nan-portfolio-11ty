@@ -26,7 +26,7 @@ To gain leadership's sign on for the project, I did some quick wireframes (using
 * Videos - vertical & horizontal
 * Account + Saved Articles
 
-<div class="img-flex-wrapper">
+<!--<div class="img-flex-wrapper">
 	<div class="img-flex-20">
 		<img alt="initial mock of home tab" src="/img/vox_app/initial_home.jpg">
 		<span class="caption">home tab</span>
@@ -47,13 +47,31 @@ To gain leadership's sign on for the project, I did some quick wireframes (using
 		<img alt="initial mock of account tab" src="/img/vox_app/initial_account.jpg">
 		<span class="caption">account tab</span>
 	</div>
+</div>-->
+<div class="img-flex-wrapper">
+	<div class="img-flex-25">
+		<img alt="initial mock of home tab" src="/img/vox_app/initial_home.jpg">
+		<span class="caption">home tab</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="initial mock of article tab" src="/img/vox_app/initial_article.jpg">
+		<span class="caption">article tab</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="initial mock of podcasts tab" src="/img/vox_app/initial_podcasts.jpg">
+		<span class="caption">podcasts tab</span>
+	</div>
+    <div class="img-flex-25">
+		<img alt="initial mock of video tab" src="/img/vox_app/initial_video.jpg">
+		<span class="caption">video tab</span>
+	</div>
 </div>
 
 ## Nav & Video 
 
-Once we got signoff to work on the app, we wanted to start building it ASAP. So, the first big decision we committed to was using the default Apple liquid glass bottom navigation. One of the app developers highly encouraged us to do this because it would be easier to maintain. At first I didn't love it because I liked the look of the more custom navs but I was eventually convinced because the native audio player (for podcasts) was very slick and the general tradeoffs seemed better for everyone involved.
+Once we got signoff to work on the app, we wanted to start building it ASAP. So, the first big decision we committed to was using the default Apple liquid glass navigation. One of the app developers highly encouraged us to do this because it would be easier to maintain. At first I didn't love it but I was eventually convinced because the native audio player was very slick and the general tradeoffs seemed better for everyone involved.
 
-<div class="img-flex-wrapper">
+<!--<div class="img-flex-wrapper">
 	<div class="img-flex-25">
 		<img alt="custom nav idea" src="/img/vox_app/nav_alt1.jpg">
 		<span class="caption">custom nav idea</span>
@@ -70,7 +88,7 @@ Once we got signoff to work on the app, we wanted to start building it ASAP. So,
 		<img alt="custom nav idea" src="/img/vox_app/nav_alt4.jpg">
 		<span class="caption">custom nav idea</span>
 	</div>
-</div>
+</div>-->
 
 <div class="img-flex-wrapper">
 	<div class="img-flex-25">
@@ -112,7 +130,7 @@ For the video tab, editorial requested an emphasis on vertical video but also wa
 
 The podcasts tab was one of the most complicated parts of the app. One of the core parts of the app was being able to listen to Vox podcasts in the app (subscribers get ad-free podcasts, non-subscribers get ads) so it was important to nail the user experience. I also had to figure out the correct focus for the page. [Today, Explained](https://podcasts.apple.com/us/podcast/today-explained/id1346207297) publishes every day and is the most popular Vox podcast but we wanted to feature all Vox podcasts. 
 
-Initially I thought a natural experience would be the latest Today, Explained episode at the top of the page followed by a few of the latest episodes for each show. When designing for podcasts, I'm always wondering if it is more important to emphasize the episode or the show that the episode is part of. 
+<!--Initially I thought a natural experience would be the latest Today, Explained episode at the top of the page followed by a few of the latest episodes for each show. When designing for podcasts, I'm always wondering if it is more important to emphasize the episode or the show that the episode is part of. 
 
 <div class="img-flex-wrapper">
 	<div class="img-flex-20">
@@ -137,7 +155,7 @@ Initially I thought a natural experience would be the latest Today, Explained ep
 	</div>
 </div>
 
-When we showed these ideas to editorial, they didn't like the emphasis only on Today, Explained, they wanted the focus of the page to be on all podcasts. I was struggling with the initial layout so decided to try something with quick links to the shows at the top and then latest episodes below. 
+When we showed these ideas to editorial, they didn't like the emphasis only on Today, Explained, they wanted the focus of the page to be on all podcasts. I was struggling with the initial layout so decided to try something with quick links to the shows at the top and then latest episodes below. -->
 
 We presented these 2 options to editorial:
 
@@ -170,7 +188,7 @@ We presented these 2 options to editorial:
 	</div>
 </div>
 
-Editorial liked the new option that focused on all the shows and that option also felt like a more straightforward design so we went with that. I also added screens for show and episode pages. 
+Editorial liked option 2 because it focused on all the shows, not just Today, Explained. I also added screens for show and episode pages. 
 
 <div class="img-flex-wrapper">
 	<div class="img-flex-33">
@@ -212,27 +230,12 @@ For the home page, we wanted to have the same tooling + design as the Vox.com ho
 I knew the latest horizontal video would go below the first view of the app ("below the fold") so I initially prioritized the tabs and the latest podcast. 
 
 <div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="home tab mock" src="/img/vox_app/initial_home1.jpg">
-		<span class="caption">home tab mock</span>
-	</div>
     <div class="img-flex-33">
 		<img alt="home tab mock" src="/img/vox_app/initial_home2.jpg">
 		<span class="caption">home tab mock</span>
 	</div>
     <div class="img-flex-33">
-		<img alt="home tab mock" src="/img/vox_app/initial_home3.jpg">
-		<span class="caption">home tab mock</span>
-	</div>
-</div>
-
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
 		<img alt="home tab mock" src="/img/vox_app/initial_home4.jpg">
-		<span class="caption">home tab mock</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="home tab mock" src="/img/vox_app/initial_home5.jpg">
 		<span class="caption">home tab mock</span>
 	</div>
     <div class="img-flex-33">
@@ -259,6 +262,8 @@ We decided the tabs worked better at the top of the page instead of after the le
 </div>
 
 ## Onboarding
+
+The subscriptions team decided that users should have to sign in to access the app and they would be enrolled in a 14-day free trial. Also, I wanted the  sign in, create account, password and payment screens to be reusable because they could be accessed from a few different places in the app. 
 
 <div class="img-flex-wrapper">
 	<div class="img-flex-25">
