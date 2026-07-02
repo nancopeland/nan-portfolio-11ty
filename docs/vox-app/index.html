@@ -16,7 +16,7 @@
       <h1>Vox iOS app</h1>
       <p class="post-description">Vox app with news, podcasts and video all in one place</p>
       
-      <p>I worked on the MVP for a Vox app that includes access to Vox news, podcasts and video. The goal of the app was to provide a premium experience for subscribers, specifically ad-free podcasts and vertical video. </p>
+      <p>I worked on the MVP for a Vox app that includes news, podcasts and video. The goal of the app was to provide a premium experience for subscribers, specifically ad-free podcasts and vertical video. </p>
 <video width="350" height="700" controls autoplay muted playsinline loop>
   <source src="/img/vox_app/vox_app.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -37,7 +37,7 @@ Your browser does not support the video tag.
 <li>Videos - vertical &amp; horizontal</li>
 <li>Account + Saved Articles</li>
 </ul>
-<div class="img-flex-wrapper">
+<!--<div class="img-flex-wrapper">
     <div class="img-flex-20">
         <img alt="initial mock of home tab" src="/img/vox_app/initial_home.jpg">
         <span class="caption">home tab</span>
@@ -58,11 +58,29 @@ Your browser does not support the video tag.
         <img alt="initial mock of account tab" src="/img/vox_app/initial_account.jpg">
         <span class="caption">account tab</span>
     </div>
+</div>-->
+<div class="img-flex-wrapper">
+    <div class="img-flex-25">
+        <img alt="initial mock of home tab" src="/img/vox_app/initial_home.jpg">
+        <span class="caption">home tab</span>
+    </div>
+    <div class="img-flex-25">
+        <img alt="initial mock of article tab" src="/img/vox_app/initial_article.jpg">
+        <span class="caption">article tab</span>
+    </div>
+    <div class="img-flex-25">
+        <img alt="initial mock of podcasts tab" src="/img/vox_app/initial_podcasts.jpg">
+        <span class="caption">podcasts tab</span>
+    </div>
+    <div class="img-flex-25">
+        <img alt="initial mock of video tab" src="/img/vox_app/initial_video.jpg">
+        <span class="caption">video tab</span>
+    </div>
 </div>
 
 <h2>Nav &amp; Video</h2>
-<p>Once we got signoff to work on the app, we wanted to start building it ASAP. So, the first big decision we committed to was using the default Apple liquid glass bottom navigation. One of the app developers highly encouraged us to do this because it would be easier to maintain. At first I didn&#39;t love it because I liked the look of the more custom navs but I was eventually convinced because the native audio player (for podcasts) was very slick and the general tradeoffs seemed better for everyone involved.</p>
-<div class="img-flex-wrapper">
+<p>Once we got signoff to work on the app, we wanted to start building it ASAP. So, the first decision we committed to was using the default Apple liquid glass navigation. One of the app developers highly encouraged us to do this because it would be easier to maintain. At first I didn&#39;t love it but I was eventually convinced because the native audio player was very slick and the tradeoffs seemed worth it.</p>
+<!--<div class="img-flex-wrapper">
     <div class="img-flex-25">
         <img alt="custom nav idea" src="/img/vox_app/nav_alt1.jpg">
         <span class="caption">custom nav idea</span>
@@ -79,7 +97,7 @@ Your browser does not support the video tag.
         <img alt="custom nav idea" src="/img/vox_app/nav_alt4.jpg">
         <span class="caption">custom nav idea</span>
     </div>
-</div>
+</div>-->
 
 <div class="img-flex-wrapper">
     <div class="img-flex-25">
@@ -100,7 +118,7 @@ Your browser does not support the video tag.
     </div>
 </div>
 
-<p>For the video tab, editorial requested an emphasis on vertical video but also wanted to feature their horizontal video content from YouTube. I initially was trying a version where both were featured on the main video tab and after you clicked on a video, you could vertically scroll thru all the videos. But, as the biggest TikTok user on the team, I thought featuring only vertical video that played automatically was a better experience. I suggested this to the team and they agreed it was more engaging and were okay to do this if we could feature horizontal video on the home tab. </p>
+<p>For the video tab, editorial requested an emphasis on vertical video but also wanted to feature horizontal videos from YouTube. I initially was trying a version where both video types were available and when you clicked on a vertical video, you could vertically scroll. But, as the biggest TikTok user on the team, I thought featuring only vertical video that played automatically was a better experience. I suggested this to the team and they agreed it was more engaging and were okay to do this if we could feature horizontal video on the home tab. </p>
 <div class="img-flex-wrapper">
     <div class="img-flex-33">
         <img alt="initial video tab mock" src="/img/vox_app/video1.jpg">
@@ -117,8 +135,9 @@ Your browser does not support the video tag.
 </div>
 
 <h2>Podcasts</h2>
-<p>The podcasts tab was one of the most complicated parts of the app. One of the core parts of the app was being able to listen to Vox podcasts in the app (subscribers get ad-free podcasts, non-subscribers get ads) so it was important to nail the user experience. I also had to figure out the correct focus for the page. <a href="https://podcasts.apple.com/us/podcast/today-explained/id1346207297">Today, Explained</a> publishes every day and is the most popular Vox podcast but we wanted to feature all Vox podcasts. </p>
-<p>Initially I thought a natural experience would be the latest Today, Explained episode at the top of the page followed by a few of the latest episodes for each show. When designing for podcasts, I&#39;m always wondering if it is more important to emphasize the episode or the show that the episode is part of. </p>
+<p>The podcasts tab was one of the most complicated parts of the app. One of the core parts of the app was being able to listen to Vox podcasts in the app (subscribers get ad-free podcasts, non-subscribers get ads) so it was important to nail the user experience. I also had to figure out the correct focus for the page. <a href="https://podcasts.apple.com/us/podcast/today-explained/id1346207297">Today, Explained</a> publishes every day and is the most popular podcast but we wanted to feature all Vox podcasts. </p>
+<!--Initially I thought a natural experience would be the latest Today, Explained episode at the top of the page followed by a few of the latest episodes for each show. When designing for podcasts, I'm always wondering if it is more important to emphasize the episode or the show that the episode is part of. 
+
 <div class="img-flex-wrapper">
     <div class="img-flex-20">
         <img alt="initial option" src="/img/vox_app/initial_pod1.jpg">
@@ -142,7 +161,8 @@ Your browser does not support the video tag.
     </div>
 </div>
 
-<p>When we showed these ideas to editorial, they didn&#39;t like the emphasis only on Today, Explained, they wanted the focus of the page to be on all podcasts. I was struggling with the initial layout so decided to try something with quick links to the shows at the top and then latest episodes below. </p>
+When we showed these ideas to editorial, they didn't like the emphasis only on Today, Explained, they wanted the focus of the page to be on all podcasts. I was struggling with the initial layout so decided to try something with quick links to the shows at the top and then latest episodes below. -->
+
 <p>We presented these 2 options to editorial:</p>
 <h3>Option 1</h3>
 <ul>
@@ -175,7 +195,7 @@ Your browser does not support the video tag.
     </div>
 </div>
 
-<p>Editorial liked the new option that focused on all the shows and that option also felt like a more straightforward design so we went with that. I also added screens for show and episode pages. </p>
+<p>Editorial liked option 2 because it focused on all the shows, not just Today, Explained. I also added screens for show and episode pages. </p>
 <div class="img-flex-wrapper">
     <div class="img-flex-33">
         <img alt="final podcast tab" src="/img/vox_app/final_pod1.jpg">
@@ -205,12 +225,83 @@ Your browser does not support the video tag.
     </div>
 </div>
 
-<p><em>Home tab &amp; onboarding coming soon...</em></p>
-<!--## Home
+<h2>Home</h2>
+<p>For the home page, we wanted to have the same tooling + design as the Vox.com homepage but with a few additions: </p>
+<ul>
+<li>2 tabs: default editorialized homepage &amp; reverse chron latest feed - the latest feed would be for users who check the homepage multiple times per day. </li>
+<li>Latest Today, Explained podcast episode</li>
+<li>Latest horizontal video (if published within the past 48 hours)</li>
+</ul>
+<p>I knew the latest horizontal video would go below the first view of the app (&quot;below the fold&quot;) so I initially prioritized the tabs and the latest podcast. </p>
+<div class="img-flex-wrapper">
+    <div class="img-flex-33">
+        <img alt="home tab mock" src="/img/vox_app/initial_home2.jpg">
+        <span class="caption">home tab mock</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="home tab mock" src="/img/vox_app/initial_home4.jpg">
+        <span class="caption">home tab mock</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="home tab mock" src="/img/vox_app/initial_home6.jpg">
+        <span class="caption">home tab mock</span>
+    </div>
+</div>
 
-For the home page, the product manager wanted to have 2 tabs: default editorialize homepage and reverse chron latest feed. The latest feed would be for users who check the homepage multiple times per day. 
+<p>We decided the tabs worked better at the top of the page instead of after the lead story. I liked the podcast at the top of the page but my PM thought it better further down the page because we have a whole podcast tab. After a few refinements, we landed on these mocks. </p>
+<div class="img-flex-wrapper">
+    <div class="img-flex-33">
+        <img alt="home tab, editorialized default" src="/img/vox_app/final_home1.jpg">
+        <span class="caption">home tab, editorialized default</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="home tab, editorialized video" src="/img/vox_app/final_home2.jpg">
+        <span class="caption">home tab, editorialized video</span>
+    </div>
+    <div class="img-flex-33">
+        <img alt="home tab, latest feed" src="/img/vox_app/final_home3.jpg">
+        <span class="caption">home tab, latest feed</span>
+    </div>
+</div>
 
-## Onboarding-->
+<h2>Onboarding</h2>
+<p>The subscriptions team decided that users should have to sign in to access the app and they would be enrolled in a 14-day free trial. Also, I wanted the  sign in, create account, password and payment screens to be reusable because they could be accessed from a few different places in the app. </p>
+<div class="img-flex-wrapper">
+    <div class="img-flex-25">
+        <img alt="loading screen" src="/img/vox_app/onboarding1.jpg">
+        <span class="caption">loading screen</span>
+    </div>
+    <div class="img-flex-25">
+        <img alt="welcome screen" src="/img/vox_app/onboarding2.jpg">
+        <span class="caption">welcome screen</span>
+    </div>
+    <div class="img-flex-25">
+        <img alt="log in" src="/img/vox_app/onboarding3.jpg">
+        <span class="caption">log in</span>
+    </div>
+    <div class="img-flex-25">
+        <img alt="create account" src="/img/vox_app/onboarding4.jpg">
+        <span class="caption">create account</span>
+    </div>
+</div>
+<div class="img-flex-wrapper">
+    <div class="img-flex-25">
+        <img alt="enter password" src="/img/vox_app/onboarding5.jpg">
+        <span class="caption">enter password</span>
+    </div>
+    <div class="img-flex-25">
+        <img alt="start free trial" src="/img/vox_app/onboarding6.jpg">
+        <span class="caption">start free trial</span>
+    </div>
+    <div class="img-flex-25">
+        <img alt="payment webview" src="/img/vox_app/onboarding7.jpg">
+        <span class="caption">payment webview</span>
+    </div>
+    <div class="img-flex-25">
+        <img alt="enable notifications" src="/img/vox_app/onboarding8.jpg">
+        <span class="caption">enable notifications</span>
+    </div>
+</div>
     </main>
     <footer>
       <a href="/">Home</a> • <a href="/resume_nan_copeland.pdf">Download Résumé</a> • <a href="https://github.com/nancopeland">Github</a>
