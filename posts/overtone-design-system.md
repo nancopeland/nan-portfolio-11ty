@@ -75,41 +75,23 @@ In addition to the standard lede (illustrated above), there are also feature, sp
     <img alt="Feature article template on Eater" src="/img/overtone_design_system/overtone_feature_article_tkns_eater.jpg">
     <span class="caption">Feature article template on Eater</span>
 </div>
-<div class="img-flex-wrapper">
-	<div class="img-flex-50">
-		<img alt="paragraph components on Vox" src="/img/overtone_design_system/paragraph_vox.png">
-		<span class="caption">paragraph components on Vox</span>
-	</div>
-	<div class="img-flex-50">
-		<img alt="paragraph components on The Verge" src="/img/overtone_design_system/paragraph_verge.png">
-		<span class="caption">paragraph components on The Verge</span>
-	</div>
-</div>
-<div class="img-flex-wrapper">
-	<div class="img-flex-50">
-		<img alt="paragraph components on Eater" src="/img/overtone_design_system/paragraph_eater.png">
-		<span class="caption">paragraph components on Eater</span>
-	</div>
-	<div class="img-flex-50">
-		<img alt="paragraph components on SBNation" src="/img/overtone_design_system/paragraph_sbn.png">
-		<span class="caption">paragraph components on SBNation</span>
-	</div>
-</div>
+<img-flex cols="2">
+	<img-card src="/img/overtone_design_system/paragraph_vox.png" alt="paragraph components on Vox">paragraph components on Vox</img-card>
+	<img-card src="/img/overtone_design_system/paragraph_verge.png" alt="paragraph components on The Verge">paragraph components on The Verge</img-card>
+</img-flex>
+<img-flex cols="2">
+	<img-card src="/img/overtone_design_system/paragraph_eater.png" alt="paragraph components on Eater">paragraph components on Eater</img-card>
+	<img-card src="/img/overtone_design_system/paragraph_sbn.png" alt="paragraph components on SBNation">paragraph components on SBNation</img-card>
+</img-flex>
 <img-flex cols="3">
 	<img-card src="/img/overtone_design_system/sidebar_vox.png" alt="sidebar component on Vox">sidebar component on Vox</img-card>
 	<img-card src="/img/overtone_design_system/sidebar_verge.png" alt="sidebar component on The Verge">sidebar component on The Verge</img-card>
 	<img-card src="/img/overtone_design_system/sidebar_eater.png" alt="sidebar component on Eater">sidebar component on Eater</img-card>
 </img-flex>
-<div class="img-flex-wrapper">
-	<div class="img-flex-50">
-		<img alt="product card on The Verge" src="/img/overtone_design_system/product_verge.png">
-		<span class="caption">product card on The Verge</span>
-	</div>
-	<div class="img-flex-50">
-		<img alt="product card on Eater" src="/img/overtone_design_system/product_eater.png">
-		<span class="caption">product card on Eater</span>
-	</div>
-</div>
+<img-flex cols="2">
+	<img-card src="/img/overtone_design_system/product_verge.png" alt="product card on The Verge">product card on The Verge</img-card>
+	<img-card src="/img/overtone_design_system/product_eater.png" alt="product card on Eater">product card on Eater</img-card>
+</img-flex>
 
 ## Homepages & Navigation
 
@@ -122,23 +104,11 @@ Hompages and navigation are 2 of the areas of the system that allow for the most
 
 For both areas, there are a set of shared components that can be arranged differently. This allows for different programming and design layout based on the brand’s needs and visual language.
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-50">
-		<img alt="Shared components on Vox mobile homepage" src="/img/overtone_design_system/homepage_mobile_vox.jpg">
-		<span class="caption">Shared components on Vox mobile homepage</span>
-	</div>
-	<div class="img-flex-50">
-		<img alt="Shared components on Eater mobile homepage" src="/img/overtone_design_system/homepage_mobile_eater.jpg">
-		<span class="caption">Shared components on Eater mobile homepage</span>
-	</div>
-</div>
-<div class="img-flex-wrapper">
-	<div class="img-flex-50">
-		<img alt="Shared components on Vox desktop homepage" src="/img/overtone_design_system/homepage_desktop_vox.jpg">
-		<span class="caption">Shared components on Vox desktop homepage</span>
-	</div>
-	<div class="img-flex-50">
-		<img alt="Shared components on Eater desktop homepage" src="/img/overtone_design_system/homepage_desktop_eater.jpg">
-		<span class="caption">Shared components on Eater desktop homepage</span>
-	</div>
-</div>
+<img-flex cols="2">
+	<img-card src="/img/overtone_design_system/homepage_mobile_vox.jpg" alt="Shared components on Vox mobile homepage">Shared components on Vox mobile homepage</img-card>
+	<img-card src="/img/overtone_design_system/homepage_mobile_eater.jpg" alt="Shared components on Eater mobile homepage">Shared components on Eater mobile homepage</img-card>
+</img-flex>
+<img-flex cols="2">
+	<img-card src="/img/overtone_design_system/homepage_desktop_vox.jpg" alt="Shared components on Vox desktop homepage">Shared components on Vox desktop homepage</img-card>
+	<img-card src="/img/overtone_design_system/homepage_desktop_eater.jpg" alt="Shared components on Eater desktop homepage">Shared components on Eater desktop homepage</img-card>
+</img-flex>

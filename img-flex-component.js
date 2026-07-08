@@ -34,8 +34,11 @@ function ImgFlexGallery({ display, items }) {
 }
 
 function getDisplayFromWrapper(wrapper) {
-  const count = wrapper.querySelectorAll(".img-flex-33, .img-flex-25").length;
+  const count = wrapper.querySelectorAll(
+    ".img-flex-50, .img-flex-33, .img-flex-25"
+  ).length;
 
+  if (count === 2) return "img-flex-50";
   if (count === 3) return "img-flex-33";
   if (count === 4) return "img-flex-25";
 

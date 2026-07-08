@@ -36,16 +36,10 @@ The marketing team started looking into vendors and most of the initial vendors 
 	<img-card src="/img/nym_perks/pass_ux2.png" alt="step 2 of pass UX">step 2 - 3rd party pass popup</img-card>
 	<img-card src="/img/nym_perks/pass_ux3.png" alt="step 3 of pass UX">step 3 - native Apple "add to wallet"</img-card>
 </img-flex>
-<!--<div class="img-flex-wrapper">
-	<div class="img-flex-50">
-		<img alt="alt pass design" src="/img/nym_perks/pass_alt1.png">
-		<span class="caption">alt pass design</span>
-	</div>
-    <div class="img-flex-50">
-		<img alt="alt pass design" src="/img/nym_perks/pass_alt2.png">
-		<span class="caption">alt pass design</span>
-	</div>
-</div>-->
+<!--<img-flex cols="2">
+	<img-card src="/img/nym_perks/pass_alt1.png" alt="alt pass design">alt pass design</img-card>
+	<img-card src="/img/nym_perks/pass_alt2.png" alt="alt pass design">alt pass design</img-card>
+</img-flex>-->
 
 ## MVP Launch
 
@@ -56,16 +50,10 @@ Because of the wallet pass concerns, we decided to design a custom experience th
 	<img-card src="/img/nym_perks/mvp_flow2.png" alt="step 2 - are you there? screen">step 2 - "are you there?" screen</img-card>
 	<img-card src="/img/nym_perks/mvp_flow3.png" alt="step 3 - redeemed screen">step 3 - redeemed screen</img-card>
 </img-flex>
-<!--<div class="img-flex-wrapper">
-	<div class="img-flex-50">
-		<img alt="redeemed stamp on perk" src="/img/nym_perks/mvp_flow4.png">
-		<span class="caption">redeemed stamp on perk</span>
-	</div>
-    <div class="img-flex-50">
-		<img alt="receipt screen" src="/img/nym_perks/mvp_flow5.png">
-		<span class="caption">receipt screen</span>
-	</div>
-</div>-->
+<!--<img-flex cols="2">
+	<img-card src="/img/nym_perks/mvp_flow4.png" alt="redeemed stamp on perk">redeemed stamp on perk</img-card>
+	<img-card src="/img/nym_perks/mvp_flow5.png" alt="receipt screen">receipt screen</img-card>
+</img-flex>-->
 
 This flow worked but we noticed that with the first perk (free coffee and cardamom bun at [La Cabra](https://lacabra.com/)), subscribers were flying thru the flow and redeeming the perk before they were at one of the La Cabra locations. I needed to add some steps that slowed them down and made sure they were physically at the vendor's establishment. 
 

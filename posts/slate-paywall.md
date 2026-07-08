@@ -14,16 +14,10 @@ Before mocking, I checked out a few other sites. All sites started with an "offe
 
 For the first test, I tested a 1-page checkout experience vs. a 3-page checkout experience. I screened for users that read media sites at least once per week. 
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-50">
-		<img alt="checkout experience that stays on 1 page" src="/img/checkout/UT1_1page.gif">
-		<span class="caption">1-page checkout</span>
-	</div>
-	<div class="img-flex-50">
-		<img alt="checkout experience that is broken up into 3 pages" src="/img/checkout/UT1_3page.gif">
-		<span class="caption">3-page checkout</span>
-	</div>
-</div>
+<img-flex cols="2">
+	<img-card src="/img/checkout/UT1_1page.gif" alt="checkout experience that stays on 1 page">1-page checkout</img-card>
+	<img-card src="/img/checkout/UT1_3page.gif" alt="checkout experience that is broken up into 3 pages">3-page checkout</img-card>
+</img-flex>
 
 **Result:** Overall, users understood both processes. When I asked which experience users preferred (something I am trying to not do anymore because I don't think an experience should be dictated by preference), they preferred the 1-page experience so I decided to go with that. 
 
@@ -34,15 +28,10 @@ For the next test, I wanted to test switching from the account creation form to 
 
 One issue I had with this round of testing was that Invision doesn't allow [smooth scrolling](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp) transitions, which is what I had envisioned for the 1-page experience, so I couldn't mimic a coded experience as well as I had hoped.
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-50">
-		<img alt="log in form with forgot password link" src="/img/checkout/UT2_login_form.png">
-	</div>
-	<div class="img-flex-50">
-		<img alt="forgot password form" src="/img/checkout/UT2_forgot_password.png">
-	</div>
-	<span class="caption">Forgot password experience</span>
-</div>
+<img-flex cols="2">
+	<img-card src="/img/checkout/UT2_login_form.png" alt="log in form with forgot password link" />
+	<img-card src="/img/checkout/UT2_forgot_password.png" alt="forgot password form" />
+</img-flex>
 
 **Result:** I asked users to subscribe as if they already had an account but couldn't remember their password. While 2 of the 8 users couldn't find the "forgot password" link, **the users who went through the whole “forgot password” flow thought it was straightforward.**
 

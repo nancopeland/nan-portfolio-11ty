@@ -39,8 +39,9 @@ function readCss() {
 }
 
 function transformImgFlexMarkup(markdown) {
-  return markdown.replace(/<img-flex\s+cols="(3|4)">([\s\S]*?)<\/img-flex>/g, (match, cols, inner) => {
-    const itemClass = cols === "3" ? "img-flex-33" : "img-flex-25";
+  return markdown.replace(/<img-flex\s+cols="(2|3|4)">([\s\S]*?)<\/img-flex>/g, (match, cols, inner) => {
+    const itemClass =
+      cols === "2" ? "img-flex-50" : cols === "3" ? "img-flex-33" : "img-flex-25";
     const cardRegex = /<img-card\s+src="([^"]+)"\s+alt="([^"]*)"\s*(?:\/>|>([\s\S]*?)<\/img-card>)/g;
     const items = [];
 
