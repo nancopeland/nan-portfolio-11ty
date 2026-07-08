@@ -31,20 +31,11 @@ But, there were concerns that subscribers would add the pass before they were at
 The marketing team started looking into vendors and most of the initial vendors who agreed to participate were better fits for the wallet pass perk type. So, I decided to focus only on that experience for the MVP. -->
 
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="step 1 of pass UX" src="/img/nym_perks/pass_ux1.png">
-		<span class="caption">step 1 - "add to wallet" button</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="step 2 of pass UX" src="/img/nym_perks/pass_ux2.png">
-		<span class="caption">step 2 - 3rd party pass popup</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="step 3 of pass UX" src="/img/nym_perks/pass_ux3.png">
-		<span class="caption">step 3 - native Apple "add to wallet"</span>
-	</div>
-</div>
+<img-flex cols="3">
+	<img-card src="/img/nym_perks/pass_ux1.png" alt="step 1 of pass UX">step 1 - "add to wallet" button</img-card>
+	<img-card src="/img/nym_perks/pass_ux2.png" alt="step 2 of pass UX">step 2 - 3rd party pass popup</img-card>
+	<img-card src="/img/nym_perks/pass_ux3.png" alt="step 3 of pass UX">step 3 - native Apple "add to wallet"</img-card>
+</img-flex>
 <!--<div class="img-flex-wrapper">
 	<div class="img-flex-50">
 		<img alt="alt pass design" src="/img/nym_perks/pass_alt1.png">
@@ -60,20 +51,11 @@ The marketing team started looking into vendors and most of the initial vendors 
 
 Because of the wallet pass concerns, we decided to design a custom experience that doesn't have a barcode and the subscriber doesn't have to leave the landing page. I added a screen that asked if the subscriber is at the vendor before redeeming the perk and then, the vendor could look at the timestamp to check that the perk was redeemed recently.
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="step 1 - redeem button" src="/img/nym_perks/mvp_flow1.png">
-		<span class="caption">step 1 - "redeem" button</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="step 2 - are you there? screen" src="/img/nym_perks/mvp_flow2.png">
-		<span class="caption">step 2 - "are you there?" screen</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="step 3 - redeemed screen" src="/img/nym_perks/mvp_flow3.png">
-		<span class="caption">step 3 - redeemed screen</span>
-	</div>
-</div>
+<img-flex cols="3">
+	<img-card src="/img/nym_perks/mvp_flow1.png" alt="step 1 - redeem button">step 1 - "redeem" button</img-card>
+	<img-card src="/img/nym_perks/mvp_flow2.png" alt="step 2 - are you there? screen">step 2 - "are you there?" screen</img-card>
+	<img-card src="/img/nym_perks/mvp_flow3.png" alt="step 3 - redeemed screen">step 3 - redeemed screen</img-card>
+</img-flex>
 <!--<div class="img-flex-wrapper">
 	<div class="img-flex-50">
 		<img alt="redeemed stamp on perk" src="/img/nym_perks/mvp_flow4.png">
@@ -95,44 +77,20 @@ This update resulted in a 98% conversion rate for perk redemption.
 
 <!--To make the perks page feel more _New York_ Magazine-branded and less marketing-y, the design team suggested using custom illustrations for each perk. They decided to go with [Leon Edler](https://www.leillo.com/) who did some very cute illustrations for the first round of perks. -->
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-25">
-		<img alt="step 1 - redeem in-store button" src="/img/nym_perks/final_flow1.png">
-		<span class="caption">step 1 - "redeem in-store" button</span>
-	</div>
-	<div class="img-flex-25">
-		<img alt="step 2 - yes/no buttons" src="/img/nym_perks/final_flow2.png">
-		<span class="caption">step 2 - yes/no buttons</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="step 3 - activate perk" src="/img/nym_perks/final_flow3.png">
-		<span class="caption">step 3 - activate perk</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="step 4 - show to team member" src="/img/nym_perks/final_flow4.png">
-		<span class="caption">step 4 - show to team member</span>
-	</div>
-</div>
+<img-flex cols="4">
+	<img-card src="/img/nym_perks/final_flow1.png" alt="step 1 - redeem in-store button">step 1 - "redeem in-store" button</img-card>
+	<img-card src="/img/nym_perks/final_flow2.png" alt="step 2 - yes/no buttons">step 2 - yes/no buttons</img-card>
+	<img-card src="/img/nym_perks/final_flow3.png" alt="step 3 - activate perk">step 3 - activate perk</img-card>
+	<img-card src="/img/nym_perks/final_flow4.png" alt="step 4 - show to team member">step 4 - show to team member</img-card>
+</img-flex>
 
 ## Account Center
 
 The perks experience also works from the account center in case subscribers went there looking for their perks. 
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-25">
-		<img alt="perks experience from NYMag Account Center" src="/img/nym_perks/acct_center1.jpg">
-		<span class="caption">perks experience from NYMag Account Center</span>
-	</div>
-	<div class="img-flex-25">
-		<img alt="perks experience from NYMag Account Center" src="/img/nym_perks/acct_center2.jpg">
-		<span class="caption">perks experience from NYMag Account Center</span>
-	</div>
-	<div class="img-flex-25">
-		<img alt="perks experience from NYMag Account Center" src="/img/nym_perks/acct_center3.jpg">
-		<span class="caption">perks experience from NYMag Account Center</span>
-	</div>
-	<div class="img-flex-25">
-		<img alt="perks experience from NYMag Account Center" src="/img/nym_perks/acct_center4.jpg">
-		<span class="caption">perks experience from NYMag Account Center</span>
-	</div>
-</div>
+<img-flex cols="4">
+	<img-card src="/img/nym_perks/acct_center1.jpg" alt="perks experience from NYMag Account Center">perks experience from NYMag Account Center</img-card>
+	<img-card src="/img/nym_perks/acct_center2.jpg" alt="perks experience from NYMag Account Center">perks experience from NYMag Account Center</img-card>
+	<img-card src="/img/nym_perks/acct_center3.jpg" alt="perks experience from NYMag Account Center">perks experience from NYMag Account Center</img-card>
+	<img-card src="/img/nym_perks/acct_center4.jpg" alt="perks experience from NYMag Account Center">perks experience from NYMag Account Center</img-card>
+</img-flex>

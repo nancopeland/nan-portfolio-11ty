@@ -48,24 +48,12 @@ To gain leadership's sign on for the project, I did some quick wireframes (using
 		<span class="caption">account tab</span>
 	</div>
 </div>-->
-<div class="img-flex-wrapper">
-	<div class="img-flex-25">
-		<img alt="initial mock of home tab" src="/img/vox_app/initial_home.jpg">
-		<span class="caption">home tab</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="initial mock of article tab" src="/img/vox_app/initial_article.jpg">
-		<span class="caption">article tab</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="initial mock of podcasts tab" src="/img/vox_app/initial_podcasts.jpg">
-		<span class="caption">podcasts tab</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="initial mock of video tab" src="/img/vox_app/initial_video.jpg">
-		<span class="caption">video tab</span>
-	</div>
-</div>
+<img-flex cols="4">
+	<img-card src="/img/vox_app/initial_home.jpg" alt="initial mock of home tab">home tab</img-card>
+	<img-card src="/img/vox_app/initial_article.jpg" alt="initial mock of article tab">article tab</img-card>
+	<img-card src="/img/vox_app/initial_podcasts.jpg" alt="initial mock of podcasts tab">podcasts tab</img-card>
+	<img-card src="/img/vox_app/initial_video.jpg" alt="initial mock of video tab">video tab</img-card>
+</img-flex>
 
 ## Nav & Video 
 
@@ -90,41 +78,20 @@ Once we got signoff to work on the app, we wanted to start building it ASAP. So,
 	</div>
 </div>-->
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-25">
-		<img alt="home tab + liquid glass nav" src="/img/vox_app/liquid_home.jpg">
-		<span class="caption">home tab + liquid glass nav</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="home tab + liquid glass native audio player" src="/img/vox_app/liquid_home_pod.jpg">
-		<span class="caption">home tab + liquid glass native audio player</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="podcasts tab + liquid glass nav" src="/img/vox_app/liquid_pod.jpg">
-		<span class="caption">podcasts tab + liquid glass nav</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="more tab + liquid glass nav" src="/img/vox_app/liquid_more.jpg">
-		<span class="caption">more tab + liquid glass nav</span>
-	</div>
-</div>
+<img-flex cols="4">
+	<img-card src="/img/vox_app/liquid_home.jpg" alt="home tab + liquid glass nav">home tab + liquid glass nav</img-card>
+	<img-card src="/img/vox_app/liquid_home_pod.jpg" alt="home tab + liquid glass native audio player">home tab + liquid glass native audio player</img-card>
+	<img-card src="/img/vox_app/liquid_pod.jpg" alt="podcasts tab + liquid glass nav">podcasts tab + liquid glass nav</img-card>
+	<img-card src="/img/vox_app/liquid_more.jpg" alt="more tab + liquid glass nav">more tab + liquid glass nav</img-card>
+</img-flex>
 
 For the video tab, editorial requested an emphasis on vertical video but also wanted to feature horizontal videos from YouTube. I initially was trying a version where both video types were available and when you clicked on a vertical video, you could vertically scroll. But, as the biggest TikTok user on the team, I thought featuring only vertical video that played automatically was a better experience. I suggested this to the team and they agreed it was more engaging and were okay to do this if we could feature horizontal video on the home tab. 
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="initial video tab mock" src="/img/vox_app/video1.jpg">
-		<span class="caption">initial video tab mock</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="initial video playing mock" src="/img/vox_app/video2.jpg">
-		<span class="caption">initial video playing mock</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="video tab with only vertical video" src="/img/vox_app/video3.jpg">
-		<span class="caption">video tab with only vertical video</span>
-	</div>
-</div>
+<img-flex cols="3">
+	<img-card src="/img/vox_app/video1.jpg" alt="initial video tab mock">initial video tab mock</img-card>
+	<img-card src="/img/vox_app/video2.jpg" alt="initial video playing mock">initial video playing mock</img-card>
+	<img-card src="/img/vox_app/video3.jpg" alt="video tab with only vertical video">video tab with only vertical video</img-card>
+</img-flex>
 
 ## Podcasts
 
@@ -169,55 +136,25 @@ We presented these 2 options to editorial:
 * All shows below with latest 2 episodes
 * Emphasizes overview of Vox podcasts and allows user to quickly access the show they’re looking for
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-25">
-		<img alt="option 1" src="/img/vox_app/opt1_1.jpg">
-		<span class="caption">option 1</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="option 1" src="/img/vox_app/opt1_2.jpg">
-		<span class="caption">option 1 + podcast playing</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="option 1" src="/img/vox_app/opt2_1.jpg">
-		<span class="caption">option 2</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="option 1" src="/img/vox_app/opt2_2.jpg">
-		<span class="caption">option 2 + podcast playing</span>
-	</div>
-</div>
+<img-flex cols="4">
+	<img-card src="/img/vox_app/opt1_1.jpg" alt="option 1">option 1</img-card>
+	<img-card src="/img/vox_app/opt1_2.jpg" alt="option 1">option 1 + podcast playing</img-card>
+	<img-card src="/img/vox_app/opt2_1.jpg" alt="option 1">option 2</img-card>
+	<img-card src="/img/vox_app/opt2_2.jpg" alt="option 1">option 2 + podcast playing</img-card>
+</img-flex>
 
 Editorial liked option 2 because it focused on all the shows, not just Today, Explained. I also added screens for show and episode pages. 
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="final podcast tab" src="/img/vox_app/final_pod1.jpg">
-		<span class="caption">final podcast tab</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="final podcast tab + podcast playing" src="/img/vox_app/final_pod2.jpg">
-		<span class="caption">final podcast tab + podcast playing</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="final show page" src="/img/vox_app/final_show.jpg">
-		<span class="caption">final show page</span>
-	</div>
-</div>
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="final episode page" src="/img/vox_app/final_ep1.jpg">
-		<span class="caption">final episode page</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="final episode page + podcast playing" src="/img/vox_app/final_ep2.jpg">
-		<span class="caption">final episode page + podcast playing</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="native app audio player" src="/img/vox_app/final_ep3.jpg">
-		<span class="caption">native app audio player</span>
-	</div>
-</div>
+<img-flex cols="3">
+	<img-card src="/img/vox_app/final_pod1.jpg" alt="final podcast tab">final podcast tab</img-card>
+	<img-card src="/img/vox_app/final_pod2.jpg" alt="final podcast tab + podcast playing">final podcast tab + podcast playing</img-card>
+	<img-card src="/img/vox_app/final_show.jpg" alt="final show page">final show page</img-card>
+</img-flex>
+<img-flex cols="3">
+	<img-card src="/img/vox_app/final_ep1.jpg" alt="final episode page">final episode page</img-card>
+	<img-card src="/img/vox_app/final_ep2.jpg" alt="final episode page + podcast playing">final episode page + podcast playing</img-card>
+	<img-card src="/img/vox_app/final_ep3.jpg" alt="native app audio player">native app audio player</img-card>
+</img-flex>
 
 ## Home
 
@@ -229,75 +166,33 @@ For the home page, we wanted to have the same tooling + design as the Vox.com ho
 
 I knew the latest horizontal video would go below the first view of the app ("below the fold") so I initially prioritized the tabs and the latest podcast. 
 
-<div class="img-flex-wrapper">
-    <div class="img-flex-33">
-		<img alt="home tab mock" src="/img/vox_app/initial_home2.jpg">
-		<span class="caption">home tab mock</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="home tab mock" src="/img/vox_app/initial_home4.jpg">
-		<span class="caption">home tab mock</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="home tab mock" src="/img/vox_app/initial_home6.jpg">
-		<span class="caption">home tab mock</span>
-	</div>
-</div>
+<img-flex cols="3">
+	<img-card src="/img/vox_app/initial_home2.jpg" alt="home tab mock">home tab mock</img-card>
+	<img-card src="/img/vox_app/initial_home4.jpg" alt="home tab mock">home tab mock</img-card>
+	<img-card src="/img/vox_app/initial_home6.jpg" alt="home tab mock">home tab mock</img-card>
+</img-flex>
 
 We decided the tabs worked better at the top of the page instead of after the lead story. I liked the podcast at the top of the page but my PM thought it better further down the page because we have a whole podcast tab. After a few refinements, we landed on these mocks. 
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="home tab, editorialized default" src="/img/vox_app/final_home1.jpg">
-		<span class="caption">home tab, editorialized default</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="home tab, editorialized video" src="/img/vox_app/final_home2.jpg">
-		<span class="caption">home tab, editorialized video</span>
-	</div>
-    <div class="img-flex-33">
-		<img alt="home tab, latest feed" src="/img/vox_app/final_home3.jpg">
-		<span class="caption">home tab, latest feed</span>
-	</div>
-</div>
+<img-flex cols="3">
+	<img-card src="/img/vox_app/final_home1.jpg" alt="home tab, editorialized default">home tab, editorialized default</img-card>
+	<img-card src="/img/vox_app/final_home2.jpg" alt="home tab, editorialized video">home tab, editorialized video</img-card>
+	<img-card src="/img/vox_app/final_home3.jpg" alt="home tab, latest feed">home tab, latest feed</img-card>
+</img-flex>
 
 ## Onboarding
 
 The subscriptions team decided that users should have to sign in to access the app and they would be enrolled in a 14-day free trial. Also, I wanted the  sign in, create account, password and payment screens to be reusable because they could be accessed from a few different places in the app. 
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-25">
-		<img alt="loading screen" src="/img/vox_app/onboarding1.jpg">
-		<span class="caption">loading screen</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="welcome screen" src="/img/vox_app/onboarding2.jpg">
-		<span class="caption">welcome screen</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="log in" src="/img/vox_app/onboarding3.jpg">
-		<span class="caption">log in</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="create account" src="/img/vox_app/onboarding4.jpg">
-		<span class="caption">create account</span>
-	</div>
-</div>
-<div class="img-flex-wrapper">
-	<div class="img-flex-25">
-		<img alt="enter password" src="/img/vox_app/onboarding5.jpg">
-		<span class="caption">enter password</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="start free trial" src="/img/vox_app/onboarding6.jpg">
-		<span class="caption">start free trial</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="payment webview" src="/img/vox_app/onboarding7.jpg">
-		<span class="caption">payment webview</span>
-	</div>
-    <div class="img-flex-25">
-		<img alt="enable notifications" src="/img/vox_app/onboarding8.jpg">
-		<span class="caption">enable notifications</span>
-	</div>
-</div>
+<img-flex cols="4">
+	<img-card src="/img/vox_app/onboarding1.jpg" alt="loading screen">loading screen</img-card>
+	<img-card src="/img/vox_app/onboarding2.jpg" alt="welcome screen">welcome screen</img-card>
+	<img-card src="/img/vox_app/onboarding3.jpg" alt="log in">log in</img-card>
+	<img-card src="/img/vox_app/onboarding4.jpg" alt="create account">create account</img-card>
+</img-flex>
+<img-flex cols="4">
+	<img-card src="/img/vox_app/onboarding5.jpg" alt="enter password">enter password</img-card>
+	<img-card src="/img/vox_app/onboarding6.jpg" alt="start free trial">start free trial</img-card>
+	<img-card src="/img/vox_app/onboarding7.jpg" alt="payment webview">payment webview</img-card>
+	<img-card src="/img/vox_app/onboarding8.jpg" alt="enable notifications">enable notifications</img-card>
+</img-flex>

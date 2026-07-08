@@ -75,40 +75,22 @@ From the above findings, I decided on the following features & recommendations f
 - Keep the swiping feature because it seems well-liked
 - It should be easy to navigate to a “Most Recent” page (because people use it so much currently) but the homepage is separate
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="App homepage with top stories vs. recent filter and search in top right" src="/img/slate_ios_app/home_wireframe_1.png">
-		<span class="caption">App homepage with "top stories" vs. "recent" filter and search in top right</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="App homepage with bottom nav and Slate Plus promo across the top" src="/img/slate_ios_app/home_wireframe_2.png">
-		<span class="caption">App homepage with bottom nav and Slate Plus promo across the top</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="App homepage with bottom nav, notable links from slate.com and 'customize' link for customizing the homepage" src="/img/slate_ios_app/home_wireframe_3.png">
-		<span class="caption">App homepage with bottom nav, notable links from slate.com and "customize" link for customizing the homepage</span>
-	</div>
-</div>
+<img-flex cols="3">
+	<img-card src="/img/slate_ios_app/home_wireframe_1.png" alt="App homepage with top stories vs. recent filter and search in top right">App homepage with "top stories" vs. "recent" filter and search in top right</img-card>
+	<img-card src="/img/slate_ios_app/home_wireframe_2.png" alt="App homepage with bottom nav and Slate Plus promo across the top">App homepage with bottom nav and Slate Plus promo across the top</img-card>
+	<img-card src="/img/slate_ios_app/home_wireframe_3.png" alt="App homepage with bottom nav, notable links from slate.com and 'customize' link for customizing the homepage">App homepage with bottom nav, notable links from slate.com and "customize" link for customizing the homepage</img-card>
+</img-flex>
 
 ### Navigation
 - Navigation should stay simple but have better organization, especially regarding rubrics’ relation to their section
 - Different content types in the app that should be reflected in the navigation: Articles (Home, Most Recent/Most Popular/Saved, Section/Rubric content), Podcasts, Slate Plus/Account Info, Support
 - Fix search function and make it more prominent 
 
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="Nav with 'podcasts' in 'main sections'" src="/img/slate_ios_app/nav_wireframe_1.png">
-		<span class="caption">Nav with "podcasts" in "main sections"</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="Nav with search at the top and 'podcasts' in 'feeds' section" src="/img/slate_ios_app/nav_wireframe_2.png">
-		<span class="caption">Nav with search at the top and "podcasts" in "feeds" section</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="Bottom nav with quick links to 'news', 'podcasts', 'search' and 'account'" src="/img/slate_ios_app/home_wireframe_2.png">
-		<span class="caption">Bottom nav with quick links to "news", "podcasts", "search" and "account"</span>
-	</div>
-</div>
+<img-flex cols="3">
+	<img-card src="/img/slate_ios_app/nav_wireframe_1.png" alt="Nav with 'podcasts' in 'main sections'">Nav with "podcasts" in "main sections"</img-card>
+	<img-card src="/img/slate_ios_app/nav_wireframe_2.png" alt="Nav with search at the top and 'podcasts' in 'feeds' section">Nav with search at the top and "podcasts" in "feeds" section</img-card>
+	<img-card src="/img/slate_ios_app/home_wireframe_2.png" alt="Bottom nav with quick links to 'news', 'podcasts', 'search' and 'account'">Bottom nav with quick links to "news", "podcasts", "search" and "account"</img-card>
+</img-flex>
 
 ### Podcasts
 - Podcasts should be easier to find, that ideally would be solved by updating how the navigation works (see above) 
@@ -172,20 +154,11 @@ I thought prompting new members with account creation right after they subscribe
 		<span class="caption">User would be prompted with account creation right after Apple payment</span>
 	</div>
 </div>
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="Account page for a Slate Plus member, able to access podcast feed link" src="/img/slate_ios_app/account_wireframe_3.png">
-		<span class="caption">Account page for a Slate Plus member, able to access podcast feed link</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="Account page for regular account holder, prompted to join Slate Plus" src="/img/slate_ios_app/account_wireframe_4.png">
-		<span class="caption">Account page for regular account holder, prompted to join Slate Plus</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="Account page for Slate Plus member who hasn't created an account, prompted to create an account" src="/img/slate_ios_app/account_wireframe_5.png">
-		<span class="caption">Account page for Slate Plus member who hasn't created an account, prompted to create an account</span>
-	</div>
-</div>
+<img-flex cols="3">
+	<img-card src="/img/slate_ios_app/account_wireframe_3.png" alt="Account page for a Slate Plus member, able to access podcast feed link">Account page for a Slate Plus member, able to access podcast feed link</img-card>
+	<img-card src="/img/slate_ios_app/account_wireframe_4.png" alt="Account page for regular account holder, prompted to join Slate Plus">Account page for regular account holder, prompted to join Slate Plus</img-card>
+	<img-card src="/img/slate_ios_app/account_wireframe_5.png" alt="Account page for Slate Plus member who hasn't created an account, prompted to create an account">Account page for Slate Plus member who hasn't created an account, prompted to create an account</img-card>
+</img-flex>
 
 ## User Testing 
 
@@ -232,20 +205,11 @@ I decided to make the navigation updates above and also update the UI so it refl
 		<span class="caption">Feed page</span>
 	</div>
 </div>
-<div class="img-flex-wrapper">
-	<div class="img-flex-33">
-		<img alt="Mock of all podcasts page" src="/img/slate_ios_app/mock_podcasts.png">
-		<span class="caption">All podcasts</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="Mock of podcast show page" src="/img/slate_ios_app/mock_show.png">
-		<span class="caption">Podcast show</span>
-	</div>
-	<div class="img-flex-33">
-		<img alt="Mock of podcast episode page" src="/img/slate_ios_app/mock_episode.png">
-		<span class="caption">Podcast episode</span>
-	</div>
-</div>
+<img-flex cols="3">
+	<img-card src="/img/slate_ios_app/mock_podcasts.png" alt="Mock of all podcasts page">All podcasts</img-card>
+	<img-card src="/img/slate_ios_app/mock_show.png" alt="Mock of podcast show page">Podcast show</img-card>
+	<img-card src="/img/slate_ios_app/mock_episode.png" alt="Mock of podcast episode page">Podcast episode</img-card>
+</img-flex>
 <div class="img-flex-wrapper">
 	<div class="img-flex-50">
 		<img alt="Mock of Slate Plus landing page" src="/img/slate_ios_app/mock_s+.png">
