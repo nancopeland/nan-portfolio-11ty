@@ -3,7 +3,7 @@ title: <i>New York</i> Magazine Perks Program
 description: NYC-based perks program for subscribers
 ---
 
-I recently worked on the [_New York_ magazine perks program](https://nymag.com/perks) which offers NYC-based perks for subscribers. The perks program is supposed to be an additional benefit for current subscribers and ideally attact new subscribers. 
+I recently worked on the [_New York_ magazine perks program](https://nymag.com/perks) which offers NYC-based perks for subscribers. The perks program is primarily an additional benefit for current subscribers but ideally could attact new subscribers. 
 
 <div class="mobile-img">
     <img alt="perks UX" src="/img/nym_perks/perks_final_ux.gif">
@@ -12,7 +12,7 @@ I recently worked on the [_New York_ magazine perks program](https://nymag.com/p
 
 ## Initial Idea
 
-The original idea for perks was that there an Apple wallet pass that each subscriber would add and they would show it at the vendor to redeem the perk. The pass gave the vendor a way to scan the subscriber's perk and make sure that each subscriber only redeemed each perk once. 
+The original idea was each perk would have an Apple wallet pass that each subscriber would add and they would show it at the vendor to redeem the perk. The pass gave the vendor a way to scan the subscriber's perk and make sure that each subscriber only redeemed each perk once. 
 
 But, there were concerns that subscribers would add the pass before they were at the business and then have trouble finding them in their Apple wallet. 
 
@@ -56,9 +56,9 @@ The marketing team started looking into vendors and most of the initial vendors 
 	</div>
 </div>-->
 
-## Refinements & MVP Launch
+## MVP Launch
 
-Because of the wallet pass concerns, we decided to design a custom experience that was all on the landing page. Because we no longer had a barcode to scan, I added a screen that asked if the subscriber is at the vendor before redeeming the perk and then, the vendor could look at the timestamp to check that the perk was redeemed recently.
+Because of the wallet pass concerns, we decided to design a custom experience that doesn't have a barcode and the subscriber doesn't have to leave the landing page. I added a screen that asked if the subscriber is at the vendor before redeeming the perk and then, the vendor could look at the timestamp to check that the perk was redeemed recently.
 
 <div class="img-flex-wrapper">
 	<div class="img-flex-33">
@@ -87,7 +87,7 @@ Because of the wallet pass concerns, we decided to design a custom experience th
 
 This flow worked but we noticed that with the first perk (free coffee and cardamom bun at [La Cabra](https://lacabra.com/)), subscribers were flying thru the flow and redeeming the perk before they were at one of the La Cabra locations. I needed to add some steps that slowed them down and made sure they were physically at the vendor's establishment. 
 
-## Post-MVP Updates
+## Post-MVP Refinements
 
 Before the [Balthazar](https://balthazarny.com/) perk launched, we updated the flow to ask the user if they were at the vendor and added a "no, i'm not there yet" button. When I showed this to a few users, this worked well to slow everyone down so they didn't click the buttons without reading the copy.
 
@@ -111,5 +111,28 @@ This update resulted in a 98% conversion rate for perk redemption.
     <div class="img-flex-25">
 		<img alt="step 4 - show to team member" src="/img/nym_perks/final_flow4.png">
 		<span class="caption">step 4 - show to team member</span>
+	</div>
+</div>
+
+## Account Center
+
+The perks experience also works from the account center in case subscribers went there looking for their perks. 
+
+<div class="img-flex-wrapper">
+	<div class="img-flex-25">
+		<img alt="perks experience from NYMag Account Center" src="/img/nym_perks/acct_center1.jpg">
+		<span class="caption">perks experience from NYMag Account Center</span>
+	</div>
+	<div class="img-flex-25">
+		<img alt="perks experience from NYMag Account Center" src="/img/nym_perks/acct_center2.jpg">
+		<span class="caption">perks experience from NYMag Account Center</span>
+	</div>
+	<div class="img-flex-25">
+		<img alt="perks experience from NYMag Account Center" src="/img/nym_perks/acct_center3.jpg">
+		<span class="caption">perks experience from NYMag Account Center</span>
+	</div>
+	<div class="img-flex-25">
+		<img alt="perks experience from NYMag Account Center" src="/img/nym_perks/acct_center4.jpg">
+		<span class="caption">perks experience from NYMag Account Center</span>
 	</div>
 </div>
