@@ -11,6 +11,7 @@ const POSTS_DIR = "./posts";
 const OUTPUT_DIR = "./docs";
 const CSS_FILE = "./style.css";
 const FAVICON_FILE = "./favicon.svg";
+const IMG_FLEX_COMPONENT_FILE = "./img-flex-component.js";
 
 // ---------- helpers ----------
 
@@ -37,6 +38,32 @@ function readCss() {
   return "";
 }
 
+function transformImgFlexMarkup(markdown) {
+  return markdown.replace(/<img-flex\s+cols="(2|3|4)">([\s\S]*?)<\/img-flex>/g, (match, cols, inner) => {
+    const itemClass =
+      cols === "2" ? "img-flex-50" : cols === "3" ? "img-flex-33" : "img-flex-25";
+    const cardRegex = /<img-card\s+src="([^"]+)"\s+alt="([^"]*)"\s*(?:\/>|>([\s\S]*?)<\/img-card>)/g;
+    const items = [];
+
+    let cardMatch;
+    while ((cardMatch = cardRegex.exec(inner)) !== null) {
+      const src = cardMatch[1];
+      const alt = cardMatch[2];
+      const caption = (cardMatch[3] || "").trim();
+
+      const captionHtml = caption
+        ? `\n        <span class="caption">${caption}</span>`
+        : "";
+
+      items.push(`    <div class="${itemClass}">\n        <img alt="${alt}" src="${src}">${captionHtml}\n    </div>`);
+    }
+
+    if (items.length === 0) return match;
+
+    return `<div class="img-flex-wrapper">\n${items.join("\n")}\n</div>`;
+  });
+}
+
 function htmlTemplate({ title, date, description, bodyHtml, isHome }) {
   const metaDesc = description
     ? `<meta name="description" content="${description}">`
@@ -45,6 +72,9 @@ function htmlTemplate({ title, date, description, bodyHtml, isHome }) {
   const header = `<a href="/" class="home-link">Nan Copeland</a>`;
   const cssPath = isHome ? "style.css" : "../style.css";
   const faviconPath = isHome ? "favicon.svg" : "../favicon.svg";
+  const imgFlexComponentPath = isHome
+    ? "img-flex-component.js"
+    : "../img-flex-component.js";
   const dateHtml = date && !isHome ? `<p class="post-date">${date}</p>` : "";
   const titleHtml = title && !isHome ? `<h1>${title}</h1>` : "";
   const descHtml = description && !isHome ? `<p class="post-description">${description}</p>` : "";
@@ -59,6 +89,7 @@ function htmlTemplate({ title, date, description, bodyHtml, isHome }) {
   <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,401,500,501,700,701&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="${faviconPath}">
   <link rel="stylesheet" href="${cssPath}">
+  <script type="module" src="${imgFlexComponentPath}"></script>
 </head>
 <body>
   <div class="container">
@@ -94,7 +125,8 @@ function build() {
     const description = meta.description || "";
     const isHome = file === "index.md";
 
-    const bodyHtml = marked.parse(body);
+    const transformedBody = transformImgFlexMarkup(body);
+    const bodyHtml = marked.parse(transformedBody);
 
     const html = htmlTemplate({ title, date, description, bodyHtml, isHome });
 
@@ -123,6 +155,14 @@ function build() {
   if (fs.existsSync(FAVICON_FILE)) {
     fs.copyFileSync(FAVICON_FILE, path.join(OUTPUT_DIR, "favicon.svg"));
     console.log("  ✓ favicon.svg copied");
+  }
+
+  if (fs.existsSync(IMG_FLEX_COMPONENT_FILE)) {
+    fs.copyFileSync(
+      IMG_FLEX_COMPONENT_FILE,
+      path.join(OUTPUT_DIR, "img-flex-component.js")
+    );
+    console.log("  ✓ img-flex-component.js copied");
   }
 
   console.log(`\nDone! ${files.length} page(s) built into ./${OUTPUT_DIR}/`);
