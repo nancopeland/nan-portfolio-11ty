@@ -3,9 +3,11 @@ title: nan copeland dot com
 description: Nan Copeland, product designer in NYC
 ---
 
-I am a product designer at [Vox Media](https://corp.voxmedia.com/) where I manage the design system for [Vox](https://www.vox.com/), [Eater](https://www.eater.com/), [The Verge](https://www.theverge.com/) and [SB Nation](https://www.sbnation.com/). I also led the redesigns for Vox and Eater and managed the subscription UX for [New York Magazine](https://nymag.com/). 
+I am a product designer at [Vox Media](https://corp.voxmedia.com/) where I lead feature development across our sites. My work has ranged from reimaging the end-to-end experiences for [Vox](https://www.vox.com/) and [Eater](https://www.eater.com/) to leading the subscription UX for [_New York_ Magazine](https://nymag.com/). 
 
-I enjoy working at the intersection of design and code to make a product easier to maintain while also allowing for nuanced brand expression and the optimal user experience. I also like working with content management systems and talking to users. Previously, I was an interaction designer at [Slate Magazine](https://slate.com/). 
+I also oversee our design system, the foundation that helps four distinct teams create consistent, high-quality products at scale. I guide its evolution, adoption and maintenance, and keep teams aligned as it grows. 
+
+I work at the intersection of design and code. Previously, I was an interaction designer at [Slate Magazine](https://slate.com/), where I designed consumer-facing experiences across the site. 
 
 ### Vox Media
 
