@@ -3,7 +3,7 @@ title: nan copeland dot com
 description: Nan Copeland, product designer in NYC
 ---
 
-I am a product designer at [Vox Media](https://corp.voxmedia.com/) where I lead feature development across our sites. My work has ranged from reimaging the end-to-end experiences for [Vox](https://www.vox.com/) and [Eater](https://www.eater.com/) to leading the subscription UX for [_New York_ Magazine](https://nymag.com/). 
+I am a product designer at [Vox Media](https://corp.voxmedia.com/) where I lead feature development across our sites. My work has ranged from reimagining the end-to-end experiences for [Vox](https://www.vox.com/) and [Eater](https://www.eater.com/) to leading the subscription UX for [_New York_ Magazine](https://nymag.com/). 
 
 I also oversee our design system, the foundation that helps four distinct teams create consistent, high-quality products at scale. I guide its evolution, adoption and maintenance, and keep teams aligned as it grows. 
 
