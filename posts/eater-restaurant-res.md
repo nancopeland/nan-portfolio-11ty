@@ -3,11 +3,74 @@ title: Eater reservations
 description: Centralizing Eater venue data to allow for on-site reservations
 ---
 
-This project centralized Eater's venue data into unified components, giving users access to reservations from multiple locations across the site. More info coming soon!
+This project centralized Eater's venue data into a unified component, giving users access to reservations from multiple locations across the site. 
 
-[View larger image here](/img/eater_restaurant_reservations.jpg). 
+I started by creating a restaurant data component that worked in multiple locations on the site. It has options for borders or no borders which can be displayed based on the component location. 
+
+<div class="mobile-img">
+    <img alt="data component" src="/img/eater_restaurants/data_component.jpg">
+    <span class="caption">data component, option for borders or no borders</span>
+</div>
+
+That component appears in 3 main locations on the site: venue component in articles, venue landing page and venue component on maps page. 
 
 <div class="img-flex-wrapper">
-    <img alt="perks UX" src="/img/eater_restaurant_reservations.jpg">
-    <span class="caption">full venue to reservation experience</span>
+    <img src="/img/eater_restaurants/venue_card.jpg" alt="enue card component in articles">
+    <span class="caption">venue card component in articles</span>
 </div>
+
+<div class="img-flex-wrapper">
+    <img src="/img/eater_restaurants/venue_page.jpg" alt="venue landing page">
+    <span class="caption">venue landing page</span>
+</div>
+
+<div class="img-flex-wrapper">
+    <img src="/img/eater_restaurants/venue_maps.jpg" alt="venue in maps page experience">
+    <span class="caption">venue in maps page experience</span>
+</div>
+
+This made it so we could add a "book a table" link to the centralized data component and readers would be able to access this experience easily across the site. The "book a table" modal has many different states, depending on venue data available. 
+
+<div class="img-flex-wrapper">
+    <img src="/img/eater_restaurants/capital_one.jpg" alt="only capital one booking available">
+    <span class="caption">only capital one booking available</span>
+</div>
+
+<div class="img-flex-wrapper">
+    <img src="/img/eater_restaurants/seven_rooms.jpg" alt="only seven rooms booking available">
+    <span class="caption">only seven rooms booking available</span>
+</div>
+
+<div class="img-flex-wrapper">
+    <img src="/img/eater_restaurants/both.jpg" alt="both capital one and seven rooms booking available">
+    <span class="caption">both capital one and seven rooms booking available</span>
+</div>
+
+<div class="img-flex-wrapper">
+    <img src="/img/eater_restaurants/both_no_c1.jpg" alt="both bookings available, no capital one availability">
+    <span class="caption">both bookings available, no capital one availability</span>
+</div>
+
+<div class="img-flex-wrapper">
+    <img src="/img/eater_restaurants/both_no_7r.jpg" alt="both bookings available, no seven rooms availability">
+    <span class="caption">both bookings available, no seven rooms availability</span>
+</div>
+
+<div class="img-flex-wrapper">
+    <img src="/img/eater_restaurants/neither.jpg" alt="both bookings available, no availability">
+    <span class="caption">both bookings available, no availability</span>
+</div>
+
+Once a user selects a table, they are taken through confirmation screens. 
+
+<div class="img-flex-wrapper">
+    <img src="/img/eater_restaurants/select_time.jpg" alt="time selected">
+    <span class="caption">time selected</span>
+</div>
+
+<div class="img-flex-wrapper">
+    <img src="/img/eater_restaurants/confirmation.jpg" alt="confirmation">
+    <span class="caption">confirmation</span>
+</div>
+
+More info coming soon!
