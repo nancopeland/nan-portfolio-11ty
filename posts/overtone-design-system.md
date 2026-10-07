@@ -3,7 +3,7 @@ title: Overtone Design System
 description: A new design system for migrating from Chorus to Wordpress
 ---
 
-I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.theverge.com/), [Eater](https://www.eater.com/) and [SB Nation](https://www.sbnation.com/) from the Chorus CMS to Wordpress which included migrating from the Chorus front-end to the new design system, Overtone. Design management wanted the front-end to run on the same system but also allow for bespoke brand expression and for a designer to be able to manage the small details, especially type styling.
+I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.theverge.com/), [Eater](https://www.eater.com/) and [SB Nation](https://www.sbnation.com/) to the design system, Overtone, that I built 0-1. The migration was part of a larger project where we migrated these sites from Chorus to Wordpress. This project involved balancing design, product, editorial and engineering needs with good user experience and bespoke brand expression for each site. Design management specifically wanted designers to be able to manage the small type, spacing and color details for each site.
 
 <img-flex cols="4">
 	<img-card src="/img/overtone_design_system/standard_vox.png" alt="standard article template, vox">standard article template, Vox</img-card>
@@ -14,7 +14,7 @@ I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.
 
 ## Project Goals
 
-This was a pretty involved project that required input from design, product, engineering and editorial stakeholders. 
+I spoke with design, product, engineering and editorial stakeholders and we decided on these goals: 
 
 * Same front-end system 
 * Designer-managed tokens
@@ -35,7 +35,7 @@ The goal was for each site to look good out of the box when it migrated to Wordp
     <span class="caption">Default category page template</span>
 </div>
 
-To set up a new site, a brand could set 1-2 fonts and 1-2 colors and use default layouts for everything. But if a brand wanted to spend a lot more time customizing both their branding and tooling, that would also work within the system. 
+To set up a new site, a brand could set 1-2 fonts and 1-2 colors and use default layouts for everything. But, if a brand wanted to spend a lot more time customizing both their branding and tooling, that would also work within the system. 
 
 <img-flex cols="3">
 	<img-card src="/img/overtone_design_system/content_card_1.png" alt="content card, default theme">content card, default theme</img-card>
@@ -75,6 +75,9 @@ In addition to the standard lede (illustrated above), there are also feature, sp
     <img alt="Feature article template on Eater" src="/img/overtone_design_system/overtone_feature_article_tkns_eater.jpg">
     <span class="caption">Feature article template on Eater</span>
 </div>
+
+The article body components are more standardized compared to the ledes but still allow for customization, if the brand chooses to do that. 
+
 <img-flex cols="2">
 	<img-card src="/img/overtone_design_system/paragraph_vox.png" alt="paragraph components on Vox">paragraph components on Vox</img-card>
 	<img-card src="/img/overtone_design_system/paragraph_verge.png" alt="paragraph components on The Verge">paragraph components on The Verge</img-card>
