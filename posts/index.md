@@ -11,7 +11,7 @@ I work at the intersection of design and code. Previously, I was an interaction 
 
 ### Vox Media
 
-* [Eater reservations](/eater-restaurant-res/)
+* [Eater perks (using Cursor)](/cursor-eater-perks/)
 * [_New York_ Magazine Perks Program](/nym-perks/)
 * [Vox app](/vox-app)
 * [Overtone design system](/overtone-design-system/)
