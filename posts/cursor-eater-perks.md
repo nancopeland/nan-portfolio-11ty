@@ -44,4 +44,26 @@ The Eater creative director sent me some of the work she'd done for Eater Awards
     <span class="caption">design for all award categories</span>
 </div>
 
+I jumped back into Figma to try a few quick ideas consistent with the Eater Awards branding. Cursor is great for prototyping but for quickly iterating and comparing design mocks, I still find Figma to be quicker. I liked having different colored backgrounds on each perk but I wanted to see which type and layout was best, especially when considering the redeemed state change. 
 
+<img-flex cols="4">
+	<img-card src="/img/eater_perks/perks_idea1.jpg" alt="perk design option">perk design option</img-card>
+	<img-card src="/img/eater_perks/perks_idea2.jpg" alt="perk design option">perk design option</img-card>
+	<img-card src="/img/eater_perks/perks_idea3.jpg" alt="perk design option">perk design option</img-card>
+	<img-card src="/img/eater_perks/perks_idea4.jpg" alt="perk design option">perk design option</img-card>
+</img-flex>
+
+<img-flex cols="4">
+	<img-card src="/img/eater_perks/redeemed1.jpg" alt="redeemed design option">redeemed design option</img-card>
+	<img-card src="/img/eater_perks/redeemed2.jpg" alt="redeemed design option">redeemed design option</img-card>
+	<img-card src="/img/eater_perks/redeemed3.jpg" alt="redeemed design option">redeemed design option</img-card>
+	<img-card src="/img/eater_perks/redeemed4.jpg" alt="redeemed design option">redeemed design option</img-card>
+</img-flex>
+
+## Final Prototype & Handoff
+
+The creative director liked perk design option #2 and redeemed design option #4 so I prompted Cursor to update the original prototype to reflect these designs. When I was playing around with this prototype, I decided it would be nice to be able to go back to the city picker step so I added a small unit between the header and the first perk that allowed the user to do that. 
+
+[gif of updated prototype]
+
+Once the prototype was cleaned up, I passed it over to an engineer (via a Github PR). I had reviewed the front-end code and felt good about it but the engineer needed to review the authentication and also hook up a redeemed perk to the user's data so that information was saved across the user's profile. The engineer also wanted to set up different URLs for each city's perks landing page. Otherwise, I was able to complete most of the code via Cursor. 
