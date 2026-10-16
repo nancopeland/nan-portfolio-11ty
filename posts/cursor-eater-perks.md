@@ -66,4 +66,4 @@ The creative director liked perk design option #2 and redeemed design option #4 
 
 [gif of updated prototype]
 
-Once the prototype was cleaned up, I passed it over to an engineer (via a Github PR). I had reviewed the front-end code and felt good about it but the engineer needed to review the authentication and also hook up a redeemed perk to the user's data so that information was saved across the user's profile. The engineer also wanted to set up different URLs for each city's perks landing page. Otherwise, I was able to complete most of the code via Cursor. 
+Once the prototype was cleaned up, I passed it over to an engineer (via a Github PR). I had reviewed the front-end code and felt good about it but the engineer needed to hook up the redeemed perk state to the user's data so that information was saved across the user's profile. The engineer also wanted to set up different URLs for each city's perks landing page. Otherwise, I was able to complete most of the front-end code via Cursor. 
