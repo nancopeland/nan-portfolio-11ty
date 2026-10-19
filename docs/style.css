@@ -186,8 +186,8 @@ img {
   }
 }
 
-
 video {
+  border: 1px solid #eee;
   width: 350px;
 }
 

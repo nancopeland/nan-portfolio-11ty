@@ -17,15 +17,15 @@
       <h1>Eater Perks</h1>
       <p class="post-description">Creating an Eater Perks experience using Cursor</p>
       
-      <p>Eater decided they wanted a <a href="/nym-perks/">perks experience like <em>New York</em> Magazine</a>. They wanted their perks to be connected to Eater Awards and have different perks for each cities but the core perk redemption experience would be the same. Because I had already designed the core experience for New York Magazine, I figured we could move quicker using Cursor.</p>
+      <p>Eater decided they wanted a <a href="/nym-perks/">perks experience like <em>New York</em> Magazine</a>. They wanted their perks to be connected to Eater Awards and have different perks for each city but the perk redemption experience would be the same. Because I had already designed the core experience for <em>New York</em> Magazine, I figured we could move quicker building this project with Cursor.</p>
 <h2>Initial Prototype</h2>
-<p>To start the project, I worked with product on what specific features we wanted from the <em>New York</em> Magazine experience vs. which features we needed to add: </p>
+<p>To start the project, I worked with product on which features we wanted from the <em>New York</em> Magazine experience vs. which features we needed to add: </p>
 <ol>
 <li>City Picker - Eater wants different sets of perks for each city instead of a centralized landing page for all perks so I need to give the user the option to select the city they&#39;re interested in. </li>
 <li>Sign In - For <em>New York</em> Magazine, there was a &quot;sign in&quot; button at the top of the page if you weren&#39;t logged in. For Eater, we decided to have a small &quot;sign in&quot; link at the top but if you weren&#39;t logged in, the sign in form would appear in a modal when you click &quot;redeem in-store.&quot; </li>
-<li>Eater Awards branding - This editorial project had specific branding and the perks experience is part of that project. This meant we could use global components but we might need to tweak their styling so the page felt more like a branded landing page, not part of the general site.</li>
+<li>Eater Awards branding - The editorial project had specific branding and the perks experience is part of that project. This meant we could use global Eater components but I would need to tweak their styling so the page felt more like a branded landing page.</li>
 </ol>
-<p>Because the rest of the flow had already been tested and finalized for <a href="/nym-perks/"><em>New York</em> Magazine</a>, I moved straight to prototyping for Eater. I built a prototype using global Eater components (buttons, sign in forms, headings, etc) with the new Eater-specific features. </p>
+<p>Because the flow had already been tested and finalized for <a href="/nym-perks/"><em>New York</em> Magazine</a>, I moved straight to prototyping for Eater. I used global Eater components (buttons, sign in forms, headings, etc) for both the original flow and the new Eater-specific features. </p>
 <div class="mobile-img">
     <video autoplay loop muted playsinline width="100%">
         <source src="/img/eater_perks/initial_eater_perks_signin.mp4" type="video/mp4">
@@ -41,7 +41,7 @@
 </div>
 
 <h2>Design Iterations</h2>
-<p>I sent this prototype for product, engineering and marketing so they would have a general idea of how the page would work. Then, I moved on to updating the visual design for the page to fit with the Eater Awards branding. </p>
+<p>I sent this prototype to product, engineering and marketing so they would have a general idea of how the page would work. Then, I moved on to updating the visual design for the page to fit with the Eater Awards branding. </p>
 <p>The Eater creative director sent me some of the work she&#39;d done for Eater Awards so I could base the perks visual design off of it. </p>
 <div class="img-flex-wrapper">
     <img alt="design for 1 award category" src="/img/eater_perks/brittany_1.png">
@@ -52,7 +52,7 @@
     <span class="caption">design for all award categories</span>
 </div>
 
-<p>I jumped back into Figma to try a few quick ideas consistent with the Eater Awards branding. Cursor is great for prototyping but for quickly iterating and comparing design mocks, I still find Figma to be quicker. I liked having different colored backgrounds on each perk but I wanted to see which type and layout was best, especially when considering the redeemed state change. </p>
+<p>I jumped back into Figma to try a few quick ideas. Cursor is great for prototyping but for quickly iterating and comparing design mocks, I still find Figma to be better. I liked having different colored backgrounds on each perk but I wanted to see which type and layout was best, especially when considering the redeemed state change. </p>
 <div class="img-flex-wrapper">
     <div class="img-flex-25">
         <img alt="perk design option" src="/img/eater_perks/perks_idea1.jpg">
@@ -93,8 +93,14 @@
 
 <h2>Final Prototype &amp; Handoff</h2>
 <p>The creative director liked perk design option #2 and redeemed design option #4 so I prompted Cursor to update the original prototype to reflect these designs. When I was playing around with this prototype, I decided it would be nice to be able to go back to the city picker step so I added a small unit between the header and the first perk that allowed the user to do that. </p>
-<p>[gif of updated prototype]</p>
-<p>Once the prototype was cleaned up, I passed it over to an engineer (via a Github PR). I had reviewed the front-end code and felt good about it but the engineer needed to hook up the redeemed perk state to the user&#39;s data so that information was saved across the user&#39;s profile. The engineer also wanted to set up different URLs for each city&#39;s perks landing page. Otherwise, I was able to complete most of the front-end code via Cursor. </p>
+<div class="mobile-img">
+    <video autoplay loop muted playsinline width="100%">
+        <source src="/img/eater_perks/final_eater_perks.mp4" type="video/mp4">
+    </video>
+    <span class="caption">final perks flow</span>
+</div>
+
+<p>Once the prototype was cleaned up, I passed it over to an engineer via a Github PR. I had reviewed the front-end code but the engineer needed to hook up the redeemed perk state to the user&#39;s data so that information was saved across the user&#39;s profile. The engineer also wanted to set up different URLs for each city&#39;s landing page. Otherwise, I was able to complete most of the front-end code via Cursor. </p>
 
     </main>
     <footer>
