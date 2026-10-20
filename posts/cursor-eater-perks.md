@@ -15,7 +15,7 @@ To start the project, I worked with product on which features we wanted from the
 
 Because the flow had already been tested and finalized for [_New York_ Magazine](/nym-perks/), I moved straight to prototyping for Eater. I used global Eater components (buttons, sign in forms, headings, etc) for both the original flow and the new Eater-specific features. 
 
-<div class="mobile-img">
+<!--<div class="mobile-img">
     <video autoplay loop muted playsinline width="100%">
         <source src="/img/eater_perks/initial_eater_perks_signin.mp4" type="video/mp4">
     </video>
@@ -26,6 +26,16 @@ Because the flow had already been tested and finalized for [_New York_ Magazine]
     <video autoplay loop muted playsinline width="100%">
         <source src="/img/eater_perks/initial_eater_perks_flow.mp4" type="video/mp4">
     </video>
+    <span class="caption">full flow if you're logged in</span>
+</div>-->
+
+<div class="mobile-img">
+    <img alt="perks UX" src="/img/eater_perks/initial_eater_perks_signin.gif">
+    <span class="caption">city picker and sign in modal</span>
+</div>
+
+<div class="mobile-img">
+    <img alt="perks UX" src="/img/eater_perks/initial_eater_perks_flow.gif">
     <span class="caption">full flow if you're logged in</span>
 </div>
 
@@ -64,10 +74,15 @@ I jumped back into Figma to try a few quick ideas. Cursor is great for prototypi
 
 The creative director liked perk design option #2 and redeemed design option #4 so I prompted Cursor to update the original prototype to reflect these designs. When I was playing around with this prototype, I decided it would be nice to be able to go back to the city picker step so I added a small unit between the header and the first perk that allowed the user to do that. 
 
-<div class="mobile-img">
+<!--<div class="mobile-img">
     <video autoplay loop muted playsinline width="100%">
         <source src="/img/eater_perks/final_eater_perks.mp4" type="video/mp4">
     </video>
+    <span class="caption">final perks flow</span>
+</div>-->
+
+<div class="mobile-img">
+    <img alt="perks UX" src="/img/eater_perks/final_eater_perks.gif">
     <span class="caption">final perks flow</span>
 </div>
 
