@@ -45,23 +45,31 @@ To set up a new site, a brand could set 1-2 fonts and 1-2 colors and use default
 
 To achieve this, the system uses shared [design tokens](https://m3.material.io/foundations/design-tokens/overview) that are assigned to shared elements between the sites. The tokens have different styles (aka values) so each site can have different fonts, colors, etc. but be on the same system. 
 
-So, in the code, tokens look something like this: 
-
 | token name | Vox | The Verge | Eater | SBNation |
 | :-------- | :-------- | :-------- | :-------- | :-------- |
 | `sys.color.primary`  | `#FFF200`  | `#5200FF`  | `#E60000`  | `#0033FF`  |
 | `sys.font.primary`  | Balto  | Poly Sans  | Degular  | Druk  |
 
-But visually, that looks like this: 
-
-<div class="img-flex-wrapper">
-    <img alt="Standard article template on desktop and mobile with a few tokens labelled" src="/img/overtone_design_system/overtone_standard_articles.gif">
-    <span class="caption">Standard article template on desktop and mobile with a few tokens labelled</span>
-</div>
-
 ## Articles
 
-In addition to the standard lede (illustrated above), there are also feature, special feature and overlay ledes and a shared set of article body components. The system used for articles is the most comprehensive and powerful part of the design system because any tooling designed for one brand is available for the other brands, if they choose to incorporate it. 
+There are 2 main article templates and a shared set of article body components. The system used for articles is the most comprehensive and powerful part of the design system because any tooling designed for one brand is available for the other brands, if they choose to incorporate it.
+
+<div class="img-flex-wrapper">
+    <img alt="Standard article template + some tokens labelled on Vox" src="/img/overtone_design_system/standard_article_tkns_vox.jpg">
+    <span class="caption">Standard article template + some tokens labelled on Vox</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="Standard article template + some tokens labelled on The Verge" src="/img/overtone_design_system/standard_article_tkns_verge.jpg">
+    <span class="caption">Standard article template + some tokens labelled on The Verge</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="Standard article template + some tokens labelled on Eater" src="/img/overtone_design_system/standard_article_tkns_eater.jpg">
+    <span class="caption">Standard article template + some tokens labelled on Eater</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="Standard article template + some tokens labelled on SBNation" src="/img/overtone_design_system/standard_article_tkns_sbn.jpg">
+    <span class="caption">Standard article template + some tokens labelled on SBNation</span>
+</div>
 
 <div class="img-flex-wrapper">
     <img alt="Feature article template on Vox" src="/img/overtone_design_system/overtone_feature_article_tkns_vox.jpg">
@@ -86,9 +94,8 @@ The article body components are more standardized compared to the ledes but stil
 	<img-card src="/img/overtone_design_system/paragraph_eater.png" alt="paragraph components on Eater">paragraph components on Eater</img-card>
 	<img-card src="/img/overtone_design_system/paragraph_sbn.png" alt="paragraph components on SBNation">paragraph components on SBNation</img-card>
 </img-flex>
-<img-flex cols="3">
+<img-flex cols="2">
 	<img-card src="/img/overtone_design_system/sidebar_vox.png" alt="sidebar component on Vox">sidebar component on Vox</img-card>
-	<img-card src="/img/overtone_design_system/sidebar_verge.png" alt="sidebar component on The Verge">sidebar component on The Verge</img-card>
 	<img-card src="/img/overtone_design_system/sidebar_eater.png" alt="sidebar component on Eater">sidebar component on Eater</img-card>
 </img-flex>
 <img-flex cols="2">
