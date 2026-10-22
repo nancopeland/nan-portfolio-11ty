@@ -103,6 +103,31 @@ The article body components are more standardized compared to the ledes but stil
 	<img-card src="/img/overtone_design_system/product_eater.png" alt="product card on Eater">product card on Eater</img-card>
 </img-flex>
 
+## Navigation
+
+The navigation part of the system has some standardized parts and some highly customizable parts. The nav that is at the top of the page is customizable in terms of layout but is made up of the same components (logo, category links, hamburger menu button) while the menu that pulls out from the hamburger menu icon has a standardized layout but allows for some color and type styling. 
+
+<div class="img-flex-wrapper">
+    <img alt="default nav" src="/img/overtone_design_system/nav_usd.jpg">
+    <span class="caption">default nav</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="nav on Vox" src="/img/overtone_design_system/nav_vox.jpg">
+    <span class="caption">nav on Vox</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="nav on The Verge" src="/img/overtone_design_system/nav_verge.jpg">
+    <span class="caption">nav on The Verge</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="nav on Eater" src="/img/overtone_design_system/nav_verge.jpg">
+    <span class="caption">nav on Eater</span>
+</div>
+<div class="img-flex-wrapper">
+    <img alt="nav on SBNation" src="/img/overtone_design_system/nav_verge.jpg">
+    <span class="caption">nav on SBNation</span>
+</div>
+
 ## Homepages & Navigation
 
 Hompages and navigation are 2 of the areas of the system that allow for the most customization. The homepages obviously needed to be different based editorial needs. Vox is more newsy so could use more standard components while Eater focuses on service journalism and city-specific content. The navs are similar but also need to showcase the brand and what it covers because it is at the top of every page. 
