@@ -3,7 +3,7 @@ title: Overtone Design System
 description: A new design system for migrating from Chorus to Wordpress
 ---
 
-I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.theverge.com/), [Eater](https://www.eater.com/) and [SB Nation](https://www.sbnation.com/) to the design system, Overtone, that I built 0-1. The migration was part of a larger project where we migrated these sites from Chorus to Wordpress. This project involved balancing design, product, editorial and engineering needs with good user experience and bespoke brand expression for each site. Design management specifically wanted designers to be able to manage the type, spacing and color details for each site.
+I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.theverge.com/), [Eater](https://www.eater.com/) and [SB Nation](https://www.sbnation.com/) to the design system, Overtone, that I built 0-1. The migration was part of a larger project where we migrated these sites from Chorus to Wordpress. This project involved balancing design, product, editorial and engineering needs with good user experience and bespoke brand expression for each site. Design management specifically wanted designers to be able to manage type, spacing and color details without engineering.
 
 <img-flex cols="4">
 	<img-card src="/img/overtone_design_system/standard_vox.png" alt="standard article template, vox">standard article template, Vox</img-card>
@@ -14,7 +14,7 @@ I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.
 
 ## Project Goals
 
-I spoke with design, product, engineering and editorial stakeholders and we decided on these goals: 
+I started by speaking with stakeholders from different teams and decided on these goals: 
 
 * Same front-end system 
 * Designer-managed tokens
@@ -22,7 +22,7 @@ I spoke with design, product, engineering and editorial stakeholders and we deci
 * Bespoke brand expression
 * System that allows for custom design + engineering work when necessary
 
-## Setup & Tokens
+## Tokens & Theming
 
 The goal was for each site to look good out of the box when it migrated to Wordpress but also allow varying levels of customization, depending on the brand's visual and editorial needs. 
 
@@ -52,7 +52,12 @@ To achieve this, the system uses shared [design tokens](https://m3.material.io/f
 
 ## Articles
 
-There are 2 main article templates and a shared set of article body components. The system used for articles is the most comprehensive and powerful part of the design system because any tooling designed for one brand is available for the other brands, if they choose to incorporate it.
+There are 2 main article templates and a shared set of article body components. The system used for articles is the most comprehensive and powerful part of the design system because articles are the primary entry point to the website. 
+
+| token name | Vox | The Verge | Eater | SBNation |
+| :-------- | :-------- | :-------- | :-------- | :-------- |
+| `comp.articleLede.standard.headline.typography.mobile`  | `700 28px/100% Balto, Arial, sans-serif`  | `700 22px/100% Poly Sans, Arial, sans-serif`  | `700 26px/100% Degular, Arial, sans-serif`  | `700 32px/100% Druk Text, Arial, sans-serif`  |
+| `sys.consumption.bodyParagraph.standard.typography`  | `400 18px/160% Harriet, Georgia, serif`  | `400 18px/160% FK Roman, Georgia, serif`  | `350 18px/170% Literata, Georgia, serif`  | `400 18px/160% IBM Plex Sans, Arial, sans-serif`  |
 
 <div class="img-flex-wrapper">
     <img alt="Standard article template + some tokens labelled on Vox" src="/img/overtone_design_system/standard_article_tkns_vox.jpg">
@@ -105,7 +110,7 @@ The article body components are more standardized compared to the ledes but stil
 
 ## Navigation
 
-Navigation has some standardized parts and some highly customizable parts. The nav that is at the top of the page is customizable in terms of layout but is made up of the same components (logo, category links, hamburger menu button) while the menu that pulls out from the hamburger menu icon has a standardized layout but allows for color and type styling. 
+The navigation has some standardized parts and some customizable parts. The top-of-page nav is customizable in terms of layout but is made up of the same components (logo, category links, hamburger menu button). The menu that pulls out from the hamburger icon has a standardized layout but allows for color and type styling. 
 
 <div class="img-flex-wrapper">
     <img alt="default nav" src="/img/overtone_design_system/nav_usd.jpg">

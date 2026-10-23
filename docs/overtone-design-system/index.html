@@ -17,7 +17,7 @@
       <h1>Overtone Design System</h1>
       <p class="post-description">A new design system for migrating from Chorus to Wordpress</p>
       
-      <p>I managed the migration of <a href="https://www.vox.com/">Vox</a>, <a href="https://www.theverge.com/">The Verge</a>, <a href="https://www.eater.com/">Eater</a> and <a href="https://www.sbnation.com/">SB Nation</a> to the design system, Overtone, that I built 0-1. The migration was part of a larger project where we migrated these sites from Chorus to Wordpress. This project involved balancing design, product, editorial and engineering needs with good user experience and bespoke brand expression for each site. Design management specifically wanted designers to be able to manage the type, spacing and color details for each site.</p>
+      <p>I managed the migration of <a href="https://www.vox.com/">Vox</a>, <a href="https://www.theverge.com/">The Verge</a>, <a href="https://www.eater.com/">Eater</a> and <a href="https://www.sbnation.com/">SB Nation</a> to the design system, Overtone, that I built 0-1. The migration was part of a larger project where we migrated these sites from Chorus to Wordpress. This project involved balancing design, product, editorial and engineering needs with good user experience and bespoke brand expression for each site. Design management specifically wanted designers to be able to manage type, spacing and color details without engineering.</p>
 <div class="img-flex-wrapper">
     <div class="img-flex-25">
         <img alt="standard article template, vox" src="/img/overtone_design_system/standard_vox.png">
@@ -38,7 +38,7 @@
 </div>
 
 <h2>Project Goals</h2>
-<p>I spoke with design, product, engineering and editorial stakeholders and we decided on these goals: </p>
+<p>I started by speaking with stakeholders from different teams and decided on these goals: </p>
 <ul>
 <li>Same front-end system </li>
 <li>Designer-managed tokens</li>
@@ -46,7 +46,7 @@
 <li>Bespoke brand expression</li>
 <li>System that allows for custom design + engineering work when necessary</li>
 </ul>
-<h2>Setup &amp; Tokens</h2>
+<h2>Tokens &amp; Theming</h2>
 <p>The goal was for each site to look good out of the box when it migrated to Wordpress but also allow varying levels of customization, depending on the brand&#39;s visual and editorial needs. </p>
 <div class="img-flex-wrapper">
     <img alt="Feature article template on Vox" src="/img/overtone_design_system/overtone_standard_article.jpg">
@@ -100,7 +100,32 @@
 </tr>
 </tbody></table>
 <h2>Articles</h2>
-<p>There are 2 main article templates and a shared set of article body components. The system used for articles is the most comprehensive and powerful part of the design system because any tooling designed for one brand is available for the other brands, if they choose to incorporate it.</p>
+<p>There are 2 main article templates and a shared set of article body components. The system used for articles is the most comprehensive and powerful part of the design system because articles are the primary entry point to the website. </p>
+<table>
+<thead>
+<tr>
+<th align="left">token name</th>
+<th align="left">Vox</th>
+<th align="left">The Verge</th>
+<th align="left">Eater</th>
+<th align="left">SBNation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>comp.articleLede.standard.headline.typography.mobile</code></td>
+<td align="left"><code>700 28px/100% Balto, Arial, sans-serif</code></td>
+<td align="left"><code>700 22px/100% Poly Sans, Arial, sans-serif</code></td>
+<td align="left"><code>700 26px/100% Degular, Arial, sans-serif</code></td>
+<td align="left"><code>700 32px/100% Druk Text, Arial, sans-serif</code></td>
+</tr>
+<tr>
+<td align="left"><code>sys.consumption.bodyParagraph.standard.typography</code></td>
+<td align="left"><code>400 18px/160% Harriet, Georgia, serif</code></td>
+<td align="left"><code>400 18px/160% FK Roman, Georgia, serif</code></td>
+<td align="left"><code>350 18px/170% Literata, Georgia, serif</code></td>
+<td align="left"><code>400 18px/160% IBM Plex Sans, Arial, sans-serif</code></td>
+</tr>
+</tbody></table>
 <div class="img-flex-wrapper">
     <img alt="Standard article template + some tokens labelled on Vox" src="/img/overtone_design_system/standard_article_tkns_vox.jpg">
     <span class="caption">Standard article template + some tokens labelled on Vox</span>
@@ -174,7 +199,7 @@
 </div>
 
 <h2>Navigation</h2>
-<p>Navigation has some standardized parts and some highly customizable parts. The nav that is at the top of the page is customizable in terms of layout but is made up of the same components (logo, category links, hamburger menu button) while the menu that pulls out from the hamburger menu icon has a standardized layout but allows for color and type styling. </p>
+<p>The navigation has some standardized parts and some customizable parts. The top-of-page nav is customizable in terms of layout but is made up of the same components (logo, category links, hamburger menu button). The menu that pulls out from the hamburger icon has a standardized layout but allows for color and type styling. </p>
 <div class="img-flex-wrapper">
     <img alt="default nav" src="/img/overtone_design_system/nav_usd.jpg">
     <span class="caption">default nav</span>
