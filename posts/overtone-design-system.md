@@ -3,7 +3,7 @@ title: Overtone Design System
 description: A new design system for migrating from Chorus to Wordpress
 ---
 
-I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.theverge.com/), [Eater](https://www.eater.com/) and [SB Nation](https://www.sbnation.com/) to the design system, Overtone, that I built 0-1. The migration was part of a larger project where we migrated these sites from Chorus to Wordpress. This project involved balancing design, product, editorial and engineering needs with good user experience and bespoke brand expression for each site. Design management specifically wanted designers to be able to manage the small type, spacing and color details for each site.
+I managed the migration of [Vox](https://www.vox.com/), [The Verge](https://www.theverge.com/), [Eater](https://www.eater.com/) and [SB Nation](https://www.sbnation.com/) to the design system, Overtone, that I built 0-1. The migration was part of a larger project where we migrated these sites from Chorus to Wordpress. This project involved balancing design, product, editorial and engineering needs with good user experience and bespoke brand expression for each site. Design management specifically wanted designers to be able to manage the type, spacing and color details for each site.
 
 <img-flex cols="4">
 	<img-card src="/img/overtone_design_system/standard_vox.png" alt="standard article template, vox">standard article template, Vox</img-card>
@@ -116,34 +116,30 @@ The navigation part of the system has some standardized parts and some highly cu
     <span class="caption">nav on Vox</span>
 </div>
 <div class="img-flex-wrapper">
+    <img alt="nav on Eater" src="/img/overtone_design_system/nav_eater.jpg">
+    <span class="caption">nav on Eater</span>
+</div>
+
+For The Verge, the navigation background color is transparent and the logo and text color change depending on page layout. For SBNation, there are 2 layouts based on if its the main SBNation site or a team site. 
+
+<div class="img-flex-wrapper">
     <img alt="nav on The Verge" src="/img/overtone_design_system/nav_verge.jpg">
     <span class="caption">nav on The Verge</span>
 </div>
 <div class="img-flex-wrapper">
-    <img alt="nav on Eater" src="/img/overtone_design_system/nav_verge.jpg">
-    <span class="caption">nav on Eater</span>
-</div>
-<div class="img-flex-wrapper">
-    <img alt="nav on SBNation" src="/img/overtone_design_system/nav_verge.jpg">
+    <img alt="nav on SBNation" src="/img/overtone_design_system/nav_sbn.jpg">
     <span class="caption">nav on SBNation</span>
 </div>
 
-## Homepages & Navigation
+## Homepage
 
-Hompages and navigation are 2 of the areas of the system that allow for the most customization. The homepages obviously needed to be different based editorial needs. Vox is more newsy so could use more standard components while Eater focuses on service journalism and city-specific content. The navs are similar but also need to showcase the brand and what it covers because it is at the top of every page. 
+The homepage is the most customizable layout in the system. It has no default layout but instead is customized for each site with reusable components such as newsletter, most popular and content card pattern components (ex. 3 grid, 5 grid, 6up, etc). 
 
 <div class="img-flex-wrapper">
-    <img alt="navs across brands" src="/img/overtone_design_system/all_navs.jpg">
-    <span class="caption">Same list of links in different nav layouts</span>
+    <img alt="homepage on Vox" src="/img/overtone_design_system/homepage_vox.jpg">
+    <span class="caption">homepage on Vox</span>
 </div>
-
-For both areas, there are a set of shared components that can be arranged differently. This allows for different programming and design layout based on the brand’s needs and visual language.
-
-<img-flex cols="2">
-	<img-card src="/img/overtone_design_system/homepage_mobile_vox.jpg" alt="Shared components on Vox mobile homepage">Shared components on Vox mobile homepage</img-card>
-	<img-card src="/img/overtone_design_system/homepage_mobile_eater.jpg" alt="Shared components on Eater mobile homepage">Shared components on Eater mobile homepage</img-card>
-</img-flex>
-<img-flex cols="2">
-	<img-card src="/img/overtone_design_system/homepage_desktop_vox.jpg" alt="Shared components on Vox desktop homepage">Shared components on Vox desktop homepage</img-card>
-	<img-card src="/img/overtone_design_system/homepage_desktop_eater.jpg" alt="Shared components on Eater desktop homepage">Shared components on Eater desktop homepage</img-card>
-</img-flex>
+<div class="img-flex-wrapper">
+    <img alt="homepage on Eater" src="/img/overtone_design_system/homepage_eater.jpg">
+    <span class="caption">homepage on Eater</span>
+</div>
